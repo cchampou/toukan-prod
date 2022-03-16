@@ -1,0 +1,45 @@
+#scroll-mouse {
+  width: 16px;
+  height: 32px;
+  border: solid 2px rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  position: relative;
+}
+
+#scroll-roller {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: white;
+  left: 4px;
+  top: 4px;
+  position: absolute;
+  animation: scroll-roller 1.5s infinite;
+}
+
+@media (hover: none) {
+  #scroll-roller {
+    animation: scroll-roller-touch 1.5s infinite;
+  }
+}
+
+@keyframes scroll-roller {
+  0% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(16px);
+    opacity: 0;
+  }
+}
+@keyframes scroll-roller-touch {
+  0% {
+    transform: translateY(16px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}

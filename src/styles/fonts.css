@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Dolce Vita';
+  src: url('../assets/fonts/DolceVita.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dolce Vita Heavy';
+  src: url('../assets/fonts/DolceVitaHeavyBold.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dolce Vita Light';
+  src: url('../assets/fonts/DolceVitaLight.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Etna';
+  src: url('../assets/fonts/etna.otf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Candara';
+  src: url('../assets/fonts/Candara.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Candara Bold';
+  src: url('../assets/fonts/CandaraBold.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Candara Light';
+  src: url('../assets/fonts/CandaraLight.ttf');
+  font-display: swap;
+}
+
+body {
+  font-family: 'Candara Light', sans-serif;
+  font-size: 1.1rem;
+}
+
+strong {
+  font-family: 'Candara Bold', Arial, sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 64px 0;
+  font-family: 'Dolce Vita Heavy', sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+@media (max-width: 800px) {
+  h1,
+  h2 {
+    margin: 16px 0;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}

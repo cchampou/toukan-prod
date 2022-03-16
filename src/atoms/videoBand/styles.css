@@ -1,0 +1,10 @@
+.video-band {
+  filter: brightness(0.3);
+  transition: filter 0.2s ease-in-out;
+  margin-bottom: -8px;
+  width: calc(100% + 1px);
+}
+
+.video-band-container:hover .video-band {
+  filter: brightness(1);
+}
