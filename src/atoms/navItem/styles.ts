@@ -9,4 +9,5 @@ export const NavItem = styled(NavLink)`
   text-decoration: none;
   font-family: ${({ theme }) => theme.fonts.primary};
   letter-spacing: 1px;
+  font-size: 1.1rem;
 `;
