@@ -1,6 +1,6 @@
 import React from 'react';
 import fpv from '../assets/fpv.mp4';
-import logo from '../assets/toukan.jpg';
+import logo from '../assets/logo.png';
 
 function Homepage() {
   return (
