@@ -8,6 +8,7 @@ import './styles/application.css';
 import TopNav from './molecules/topNav/TopNav';
 import { darkTheme, lightTheme } from './styles/theme';
 import darkContext from './contexts/dark';
+import NotFound from './pages/notFound/NotFound';
 
 declare module '@emotion/react' {
   export interface Theme {
@@ -41,8 +42,7 @@ function App() {
           <TopNav />
           <Routes>
             <Route path="/" element={<Homepage />} />
-            <Route path="/legal" element={<Homepage />} />
-            <Route path="/contact" element={<Homepage />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </ThemeProvider>
       </darkContext.Provider>

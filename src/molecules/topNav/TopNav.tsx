@@ -21,7 +21,7 @@ function TopNav() {
   return (
     <Nav
       className={`top-nav-default ${
-        true || isMouseTop || isScrolled ? 'show-top-nav' : ''
+        isMouseTop || isScrolled ? 'show-top-nav' : ''
       }`}
       id="top-nav-main"
     >
