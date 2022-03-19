@@ -6,7 +6,7 @@ function TopNav() {
 
   const handleScroll = useCallback(
     (e: MouseEvent) => {
-      if (e.y < 200) {
+      if (window.scrollY > 0 || e.y < window.innerHeight / 2.5) {
         setIsOpen(true);
       } else {
         setIsOpen(false);
@@ -16,10 +16,12 @@ function TopNav() {
   );
 
   useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
     window.addEventListener('mousemove', handleScroll);
 
     return () => {
-      window.removeEventListener('mousemove', handleScroll);
+      window.removeEventListener('scroll', handleScroll);
+      window.addEventListener('mousemove', handleScroll);
     };
   }, []);
 

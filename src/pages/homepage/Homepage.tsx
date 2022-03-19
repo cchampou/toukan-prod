@@ -16,6 +16,34 @@ function Homepage() {
       </div>
       <div id="homepage-content">
         <h1>Toukantéki</h1>
+        <p>
+          Toukantéki is a film festival that celebrates the film industry and
+          the creative community.
+        </p>
+        <p>
+          Toukantéki is a film festival that celebrates the film industry and
+          the creative community.
+        </p>
+        <p>
+          Toukantéki is a film festival that celebrates the film industry and
+          the creative community.
+        </p>
+        <p>
+          Toukantéki is a film festival that celebrates the film industry and
+          the creative community.
+        </p>
+        <p>
+          Toukantéki is a film festival that celebrates the film industry and
+          the creative community.
+        </p>
+        <p>
+          Toukantéki is a film festival that celebrates the film industry and
+          the creative community.
+        </p>
+        <p>
+          Toukantéki is a film festival that celebrates the film industry and
+          the creative community.
+        </p>
       </div>
     </>
   );
