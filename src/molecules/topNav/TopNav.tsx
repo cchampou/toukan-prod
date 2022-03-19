@@ -37,7 +37,7 @@ function TopNav() {
         <DarkModeSwitch onClick={toggleDark}>
           <FontAwesomeIcon icon={isDark ? faSun : faMoon} />
         </DarkModeSwitch>
-        <CallToAction to="/contact">Contact</CallToAction>
+        <CallToAction to="/contact">CONTACT</CallToAction>
       </RightSection>
     </Nav>
   );

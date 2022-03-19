@@ -12,4 +12,5 @@ export const Button = styled('button')`
   font-weight: bolder;
   font-size: 1.2rem;
   font-family: 'Etna', sans-serif;
+  letter-spacing: 1px;
 `;

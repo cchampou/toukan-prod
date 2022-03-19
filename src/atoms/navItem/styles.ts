@@ -8,4 +8,5 @@ export const NavItem = styled(NavLink)`
   color: ${({ theme }) => theme.colors.dark};
   text-decoration: none;
   font-family: ${({ theme }) => theme.fonts.primary};
+  letter-spacing: 1px;
 `;

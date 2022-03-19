@@ -25,7 +25,7 @@ declare module '@emotion/react' {
 }
 
 function App() {
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
 
   const darkContextValue = useMemo(
     () => ({
