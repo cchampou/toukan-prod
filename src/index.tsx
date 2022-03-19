@@ -5,6 +5,7 @@ import { ThemeProvider } from '@emotion/react';
 
 import Homepage from './pages/homepage/Homepage';
 import './styles/application.css';
+import './styles/fonts.css';
 import TopNav from './molecules/topNav/TopNav';
 import { darkTheme, lightTheme } from './styles/theme';
 import darkContext from './contexts/dark';
@@ -15,6 +16,9 @@ declare module '@emotion/react' {
     colors: {
       dark: string;
       light: string;
+    };
+    fonts: {
+      primary: string;
     };
   }
 }

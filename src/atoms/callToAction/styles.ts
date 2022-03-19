@@ -11,4 +11,5 @@ export const Button = styled('button')`
   cursor: pointer;
   font-weight: bolder;
   font-size: 1rem;
+  font-family: ${({ theme }) => theme.fonts.primary};
 `;

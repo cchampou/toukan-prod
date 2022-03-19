@@ -7,11 +7,7 @@ type Props = { children: ReactNode } & Pick<NavLinkProps, 'to'>;
 function CallToAction({ children, to }: Props) {
   const navigate = useNavigate();
 
-  return (
-    <div>
-      <Button onClick={() => navigate(to)}>{children}</Button>
-    </div>
-  );
+  return <Button onClick={() => navigate(to)}>{children}</Button>;
 }
 
 export default CallToAction;

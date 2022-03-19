@@ -5,6 +5,9 @@ export const lightTheme: Theme = {
     dark: '#101010',
     light: '#fafafa',
   },
+  fonts: {
+    primary: 'Dolce Vita',
+  },
 };
 
 export const darkTheme: Theme = {
