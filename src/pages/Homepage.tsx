@@ -1,8 +1,16 @@
 import React from 'react';
-import background from '../assets/toukan.jpg';
+import fpv from '../assets/fpv.mp4';
+import logo from '../assets/toukan.jpg';
 
 function Homepage() {
-  return <img src={background} alt="Toukan Cinema" />;
+  return (
+    <>
+      <video autoPlay loop muted>
+        <source src={fpv} type="video/mp4" />
+      </video>
+      <img src={logo} alt="Toukan Cinema" />
+    </>
+  );
 }
 
 export default Homepage;
