@@ -1,6 +1,6 @@
 import React from 'react';
 import video from '../assets/conflu.mp4';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo-spread-shadow.png';
 
 function Homepage() {
   return (
