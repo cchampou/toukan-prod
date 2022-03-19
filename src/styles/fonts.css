@@ -2,3 +2,8 @@
   font-family: 'Dolce Vita';
   src: url('../assets/fonts/Dolce Vita.ttf');
 }
+
+@font-face {
+  font-family: 'Dolce Vita Heavy';
+  src: url('../assets/fonts/Dolce Vita Heavy Bold.ttf');
+}
