@@ -1,28 +1,38 @@
-import React, { useCallback, useEffect } from 'react';
+import React, { useContext } from 'react';
 import logoBlack from '../../assets/logo-black.png';
+import logoWhite from '../../assets/logo-white.png';
 import './styles.css';
 import useGoToHomepage from '../../hooks/useGoToHomepage';
 import useTopNavVisibility from '../../hooks/useTopNavVisibility';
+import { Nav } from './styles';
+import darkContext from '../../contexts/dark';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import DarkModeSwitch from '../../atoms/darkModeSwitch/DarkModeSwitch';
 
 function TopNav() {
   const goToHomepage = useGoToHomepage();
   const { isMouseTop, isScrolled } = useTopNavVisibility();
+  const { toggleDark, isDark } = useContext(darkContext);
 
   return (
-    <nav
+    <Nav
       className={`top-nav-default ${
         isMouseTop || isScrolled ? 'show-top-nav' : ''
       }`}
       id="top-nav-main"
     >
       <img
-        src={logoBlack}
+        src={isDark ? logoWhite : logoBlack}
         alt="logo"
         id="top-nav-logo"
         role="button"
         onClick={goToHomepage}
       />
-    </nav>
+      <DarkModeSwitch onClick={toggleDark}>
+        <FontAwesomeIcon icon={isDark ? faSun : faMoon} />
+      </DarkModeSwitch>
+    </Nav>
   );
 }
 
