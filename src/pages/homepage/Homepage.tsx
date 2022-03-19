@@ -6,7 +6,7 @@ import './styles.css';
 import useTopNavVisibility from '../../hooks/useTopNavVisibility';
 
 function Homepage() {
-  const isOpen = useTopNavVisibility();
+  const { isScrolled } = useTopNavVisibility();
 
   return (
     <>
@@ -18,7 +18,7 @@ function Homepage() {
         alt="Toukan Cinema"
         id="homepage-logo"
         className={`homepage-logo-default ${
-          isOpen ? 'homepage-logo-hide' : ''
+          isScrolled ? 'homepage-logo-hide' : ''
         }`}
       />
       <div id="scroll-cta-container">

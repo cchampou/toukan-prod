@@ -6,11 +6,13 @@ import useTopNavVisibility from '../../hooks/useTopNavVisibility';
 
 function TopNav() {
   const goToHomepage = useGoToHomepage();
-  const isOpen = useTopNavVisibility();
+  const { isMouseTop, isScrolled } = useTopNavVisibility();
 
   return (
     <nav
-      className={`top-nav-default ${isOpen ? 'show-top-nav' : ''}`}
+      className={`top-nav-default ${
+        isMouseTop || isScrolled ? 'show-top-nav' : ''
+      }`}
       id="top-nav-main"
     >
       <img
