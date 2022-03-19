@@ -10,6 +10,6 @@ export const Button = styled('button')`
   margin: 0 32px;
   cursor: pointer;
   font-weight: bolder;
-  font-size: 1rem;
-  font-family: ${({ theme }) => theme.fonts.intense};
+  font-size: 1.2rem;
+  font-family: 'Etna', sans-serif;
 `;

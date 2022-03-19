@@ -7,3 +7,8 @@
   font-family: 'Dolce Vita Heavy';
   src: url('../assets/fonts/Dolce Vita Heavy Bold.ttf');
 }
+
+@font-face {
+  font-family: 'Etna';
+  src: url('../assets/fonts/etna.otf');
+}
