@@ -1,0 +1,16 @@
+#top-nav-main {
+  background-color: white;
+  position: sticky;
+  width: 100vw;
+  height: 50px;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.top-nav-default {
+  opacity: 0;
+}
+
+.show-top-nav {
+  opacity: 0.9;
+}

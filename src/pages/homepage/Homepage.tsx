@@ -1,7 +1,8 @@
 import React from 'react';
-import video from '../assets/conflu.mp4';
-import logo from '../assets/logo-spread-shadow.png';
-import Scroll from '../atoms/scroll/Scroll';
+import video from '../../assets/conflu.mp4';
+import logo from '../../assets/logo-spread-shadow.png';
+import Scroll from '../../atoms/scroll/Scroll';
+import './styles.css';
 
 function Homepage() {
   return (
