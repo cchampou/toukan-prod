@@ -1,14 +1,15 @@
 #homepage-video {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 100vh;
   transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
 #homepage-logo {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   max-width: 80vw;
@@ -20,4 +21,11 @@
   position: absolute;
   top: 90%;
   left: 50%;
+}
+
+#homepage-content {
+  position: absolute;
+  top: calc(100vh + 50px);
+  max-width: 80vw;
+  width: 40rem;
 }

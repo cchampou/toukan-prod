@@ -14,6 +14,9 @@ function Homepage() {
       <div id="scroll-cta-container">
         <Scroll />
       </div>
+      <div id="homepage-content">
+        <h1>Toukantéki</h1>
+      </div>
     </>
   );
 }
