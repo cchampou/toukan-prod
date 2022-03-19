@@ -4,3 +4,8 @@ import styled from '@emotion/styled';
 export const Nav = styled('nav')`
   background-color: ${({ theme }) => theme.colors.light};
 `;
+
+export const RightSection = styled('div')`
+  display: flex;
+  align-items: center;
+`;

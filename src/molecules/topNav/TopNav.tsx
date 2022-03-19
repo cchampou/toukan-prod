@@ -4,11 +4,14 @@ import logoWhite from '../../assets/logo-white.png';
 import './styles.css';
 import useGoToHomepage from '../../hooks/useGoToHomepage';
 import useTopNavVisibility from '../../hooks/useTopNavVisibility';
-import { Nav } from './styles';
+import { Nav, RightSection } from './styles';
 import darkContext from '../../contexts/dark';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import DarkModeSwitch from '../../atoms/darkModeSwitch/DarkModeSwitch';
+import { NavLink } from 'react-router-dom';
+import CallToAction from '../../atoms/callToAction/CallToAction';
+import { NavItem } from '../../atoms/navItem/styles';
 
 function TopNav() {
   const goToHomepage = useGoToHomepage();
@@ -18,7 +21,7 @@ function TopNav() {
   return (
     <Nav
       className={`top-nav-default ${
-        isMouseTop || isScrolled ? 'show-top-nav' : ''
+        true || isMouseTop || isScrolled ? 'show-top-nav' : ''
       }`}
       id="top-nav-main"
     >
@@ -29,9 +32,13 @@ function TopNav() {
         role="button"
         onClick={goToHomepage}
       />
-      <DarkModeSwitch onClick={toggleDark}>
-        <FontAwesomeIcon icon={isDark ? faSun : faMoon} />
-      </DarkModeSwitch>
+      <RightSection>
+        <NavItem to="/portfolio">Portfolio</NavItem>
+        <DarkModeSwitch onClick={toggleDark}>
+          <FontAwesomeIcon icon={isDark ? faSun : faMoon} />
+        </DarkModeSwitch>
+        <CallToAction to="/contact">Contact</CallToAction>
+      </RightSection>
     </Nav>
   );
 }

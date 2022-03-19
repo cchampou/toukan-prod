@@ -9,6 +9,15 @@ import TopNav from './molecules/topNav/TopNav';
 import { darkTheme, lightTheme } from './styles/theme';
 import darkContext from './contexts/dark';
 
+declare module '@emotion/react' {
+  export interface Theme {
+    colors: {
+      dark: string;
+      light: string;
+    };
+  }
+}
+
 function App() {
   const [isDark, setIsDark] = useState(true);
 
