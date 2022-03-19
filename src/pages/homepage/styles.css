@@ -11,16 +11,17 @@
   left: 50%;
   max-width: 80vw;
   width: 40rem;
-  transform: translate(-50%, -50%);
 }
 
 .homepage-logo-default {
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .homepage-logo-hide {
   opacity: 0;
+  transform: translate(-50%, -40%);
 }
 
 #scroll-cta-container {
