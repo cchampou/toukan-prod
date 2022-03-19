@@ -17,6 +17,15 @@
   transform: translate(-50%, -50%);
 }
 
+.homepage-logo-default {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.homepage-logo-hide {
+  opacity: 0;
+}
+
 #scroll-cta-container {
   position: absolute;
   top: 90%;

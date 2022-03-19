@@ -2,31 +2,11 @@ import React, { useCallback, useEffect } from 'react';
 import logoBlack from '../../assets/logo-black.png';
 import './styles.css';
 import useGoToHomepage from '../../hooks/useGoToHomepage';
+import useTopNavVisibility from '../../hooks/useTopNavVisibility';
 
 function TopNav() {
-  const [isOpen, setIsOpen] = React.useState(false);
   const goToHomepage = useGoToHomepage();
-
-  const handleScroll = useCallback(
-    (e: MouseEvent) => {
-      if (window.scrollY > 0 || e.y < window.innerHeight / 2.5) {
-        setIsOpen(true);
-      } else {
-        setIsOpen(false);
-      }
-    },
-    [setIsOpen]
-  );
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('mousemove', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.addEventListener('mousemove', handleScroll);
-    };
-  }, []);
+  const isOpen = useTopNavVisibility();
 
   return (
     <nav

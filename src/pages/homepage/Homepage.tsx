@@ -3,14 +3,24 @@ import video from '../../assets/conflu.mp4';
 import logo from '../../assets/logo-spread-shadow.png';
 import Scroll from '../../atoms/scroll/Scroll';
 import './styles.css';
+import useTopNavVisibility from '../../hooks/useTopNavVisibility';
 
 function Homepage() {
+  const isOpen = useTopNavVisibility();
+
   return (
     <>
       <video id="homepage-video" autoPlay loop muted>
         <source src={video} type="video/mp4" />
       </video>
-      <img src={logo} alt="Toukan Cinema" id="homepage-logo" />
+      <img
+        src={logo}
+        alt="Toukan Cinema"
+        id="homepage-logo"
+        className={`homepage-logo-default ${
+          isOpen ? 'homepage-logo-hide' : ''
+        }`}
+      />
       <div id="scroll-cta-container">
         <Scroll />
       </div>
