@@ -1,8 +1,11 @@
 import React, { useCallback, useEffect } from 'react';
+import logoBlack from '../../assets/logo-black.png';
 import './styles.css';
+import useGoToHomepage from '../../hooks/useGoToHomepage';
 
 function TopNav() {
   const [isOpen, setIsOpen] = React.useState(false);
+  const goToHomepage = useGoToHomepage();
 
   const handleScroll = useCallback(
     (e: MouseEvent) => {
@@ -29,7 +32,15 @@ function TopNav() {
     <nav
       className={`top-nav-default ${isOpen ? 'show-top-nav' : ''}`}
       id="top-nav-main"
-    />
+    >
+      <img
+        src={logoBlack}
+        alt="logo"
+        id="top-nav-logo"
+        role="button"
+        onClick={goToHomepage}
+      />
+    </nav>
   );
 }
 

@@ -2,10 +2,11 @@
   background-color: white;
   position: fixed;
   width: 100vw;
-  height: 80px;
+  height: 64px;
   z-index: 1;
   transition: all 0.5s ease-in-out;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
 }
 
 .top-nav-default {
@@ -16,4 +17,9 @@
 .show-top-nav {
   opacity: 1;
   margin-top: 0;
+}
+
+#top-nav-logo {
+  height: 100%;
+  cursor: pointer;
 }
