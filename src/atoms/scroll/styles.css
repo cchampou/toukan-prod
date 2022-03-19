@@ -1,8 +1,7 @@
 #scroll-mouse {
   width: 20px;
   height: 40px;
-  border: solid 2px white;
-  opacity: 0.2;
+  border: solid 2px rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   position: relative;
 }
@@ -15,7 +14,7 @@
   left: 5px;
   top: 5px;
   position: absolute;
-  animation: scroll-roller 2s infinite;
+  animation: scroll-roller 1.5s infinite;
 }
 
 @keyframes scroll-roller {
