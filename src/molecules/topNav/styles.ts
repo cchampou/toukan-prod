@@ -8,4 +8,5 @@ export const Nav = styled('nav')`
 export const RightSection = styled('div')`
   display: flex;
   align-items: center;
+  margin-right: -32px;
 `;
