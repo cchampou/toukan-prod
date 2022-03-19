@@ -5,12 +5,15 @@
   height: 80px;
   z-index: 1;
   transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .top-nav-default {
   opacity: 0;
+  margin-top: -5px;
 }
 
 .show-top-nav {
-  opacity: 0.9;
+  opacity: 1;
+  margin-top: 0;
 }
