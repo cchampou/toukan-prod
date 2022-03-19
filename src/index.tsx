@@ -1,9 +1,18 @@
 import React from 'react';
 import { render } from 'react-dom';
-import background from './assets/toukan.jpg';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Homepage from './pages/Homepage';
 
 function App() {
-  return <img src={background} alt="Toukan Cinema" />;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/legal" element={<Homepage />} />
+        <Route path="/contact" element={<Homepage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 render(<App />, document.getElementById('root'));
