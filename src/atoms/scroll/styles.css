@@ -1,18 +1,18 @@
 #scroll-mouse {
-  width: 20px;
-  height: 40px;
+  width: 16px;
+  height: 32px;
   border: solid 2px rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
+  border-radius: 16px;
   position: relative;
 }
 
 #scroll-roller {
-  width: 10px;
-  height: 10px;
-  border-radius: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
   background-color: white;
-  left: 5px;
-  top: 5px;
+  left: 4px;
+  top: 4px;
   position: absolute;
   animation: scroll-roller 1.5s infinite;
 }
@@ -20,9 +20,10 @@
 @keyframes scroll-roller {
   0% {
     transform: translateY(0);
+    opacity: 0.5;
   }
   100% {
-    transform: translateY(20px);
+    transform: translateY(16px);
     opacity: 0;
   }
 }
