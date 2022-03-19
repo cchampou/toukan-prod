@@ -1,0 +1,29 @@
+#scroll-mouse {
+  width: 20px;
+  height: 40px;
+  border: solid 2px white;
+  opacity: 0.2;
+  border-radius: 20px;
+  position: relative;
+}
+
+#scroll-roller {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: white;
+  left: 5px;
+  top: 5px;
+  position: absolute;
+  animation: scroll-roller 2s infinite;
+}
+
+@keyframes scroll-roller {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
