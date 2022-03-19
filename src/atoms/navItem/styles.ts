@@ -7,4 +7,5 @@ export const NavItem = styled(NavLink)`
   padding: 12px 32px;
   color: ${({ theme }) => theme.colors.dark};
   text-decoration: none;
+  font-family: ${({ theme }) => theme.fonts.primary};
 `;

@@ -12,5 +12,4 @@ export const Button = styled('button')`
   font-weight: bolder;
   font-size: 1rem;
   font-family: ${({ theme }) => theme.fonts.intense};
-  font-weight: bolder;
 `;
