@@ -43,6 +43,9 @@ function Homepage() {
             qualitative.
           </PresentationParagraph>
         </PresentationContainer>
+        <video autoPlay loop muted>
+          <source src="https://toukan-production.s3.eu-west-3.amazonaws.com/corpo.mp4" />
+        </video>
       </ContentContainer>
     </>
   );
