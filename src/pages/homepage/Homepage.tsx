@@ -4,7 +4,6 @@ import logoWhite from '../../assets/logo-white.png';
 import Scroll from '../../atoms/scroll/Scroll';
 import './styles.css';
 import useTopNavVisibility from '../../hooks/useTopNavVisibility';
-import { ContentContainer } from './styles';
 
 function Homepage() {
   const { isScrolled } = useTopNavVisibility();
