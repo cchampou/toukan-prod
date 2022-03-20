@@ -3,7 +3,11 @@ import logoWhite from '../../assets/logo-white.png';
 import Scroll from '../../atoms/scroll/Scroll';
 import './styles.css';
 import useTopNavVisibility from '../../hooks/useTopNavVisibility';
-import { ContentContainer, PresentationParagraph } from './styles';
+import {
+  ContentContainer,
+  PresentationContainer,
+  PresentationParagraph,
+} from './styles';
 
 function Homepage() {
   const { isScrolled } = useTopNavVisibility();
@@ -28,14 +32,17 @@ function Homepage() {
         <Scroll />
       </div>
       <ContentContainer>
-        <h2>PRÉSENTATION</h2>
-        <PresentationParagraph>
-          Toukan est une boite de production audiovisuelle spécialisée dans la{' '}
-          <strong>mise en scène</strong>, la <strong>colorimétrie</strong> et le{' '}
-          <strong>télépilotage de drone</strong>. Nous vous proposons un vaste
-          choix de prestations pour vous ou votre entreprise afin d’embellir vos
-          idées dans une ambiance cinématique des plus qualitative.
-        </PresentationParagraph>
+        <PresentationContainer>
+          <h2>PRÉSENTATION</h2>
+          <PresentationParagraph>
+            Toukan est une boite de production audiovisuelle spécialisée dans la{' '}
+            <strong>mise en scène</strong>, la <strong>colorimétrie</strong> et
+            le <strong>télépilotage de drone</strong>. Nous vous proposons un
+            vaste choix de prestations pour vous ou votre entreprise afin
+            d’embellir vos idées dans une ambiance cinématique des plus
+            qualitative.
+          </PresentationParagraph>
+        </PresentationContainer>
       </ContentContainer>
     </>
   );
