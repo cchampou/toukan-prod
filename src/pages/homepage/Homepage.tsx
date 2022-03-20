@@ -1,5 +1,5 @@
 import React from 'react';
-import video from '../../assets/conflu.mp4';
+import video from '../../assets/intro.mp4';
 import logoWhite from '../../assets/logo-white.png';
 import Scroll from '../../atoms/scroll/Scroll';
 import './styles.css';
