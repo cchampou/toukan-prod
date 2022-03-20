@@ -1,5 +1,4 @@
 import React from 'react';
-import video from '../../assets/conflu.mp4';
 import logoWhite from '../../assets/logo-white.png';
 import Scroll from '../../atoms/scroll/Scroll';
 import './styles.css';
@@ -11,7 +10,10 @@ function Homepage() {
   return (
     <>
       <video id="homepage-video" autoPlay loop muted>
-        <source src={video} type="video/mp4" />
+        <source
+          src="https://toukan-production.s3.eu-west-3.amazonaws.com/conflu.mp4"
+          type="video/mp4"
+        />
       </video>
       <img
         src={logoWhite}
