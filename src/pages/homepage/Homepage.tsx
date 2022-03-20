@@ -25,37 +25,6 @@ function Homepage() {
       <div id="scroll-cta-container">
         <Scroll />
       </div>
-      <ContentContainer>
-        <h1>Toukantéki</h1>
-        <p>
-          Toukantéki is a film festival that celebrates the film industry and
-          the creative community.
-        </p>
-        <p>
-          Toukantéki is a film festival that celebrates the film industry and
-          the creative community.
-        </p>
-        <p>
-          Toukantéki is a film festival that celebrates the film industry and
-          the creative community.
-        </p>
-        <p>
-          Toukantéki is a film festival that celebrates the film industry and
-          the creative community.
-        </p>
-        <p>
-          Toukantéki is a film festival that celebrates the film industry and
-          the creative community.
-        </p>
-        <p>
-          Toukantéki is a film festival that celebrates the film industry and
-          the creative community.
-        </p>
-        <p>
-          Toukantéki is a film festival that celebrates the film industry and
-          the creative community.
-        </p>
-      </ContentContainer>
     </>
   );
 }
