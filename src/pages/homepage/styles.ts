@@ -18,4 +18,5 @@ export const PresentationContainer = styled('section')`
 export const PresentationParagraph = styled('p')`
   width: 40vw;
   letter-spacing: 1px;
+  line-height: 1.5;
 `;
