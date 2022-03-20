@@ -11,7 +11,7 @@ function Homepage() {
     <>
       <video id="homepage-video" autoPlay loop muted>
         <source
-          src="https://toukan-production.s3.eu-west-3.amazonaws.com/tokan.webm"
+          src="https://toukan-production.s3.eu-west-3.amazonaws.com/toukan.webm"
           type="video/mp4"
         />
       </video>
