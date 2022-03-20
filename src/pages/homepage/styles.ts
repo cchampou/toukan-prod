@@ -10,3 +10,8 @@ export const ContentContainer = styled('div')`
   padding: 1rem;
   min-height: calc(100vh - 2rem);
 `;
+
+export const PresentationParagraph = styled('p')`
+  width: 40vw;
+  margin: 0 10%;
+`;

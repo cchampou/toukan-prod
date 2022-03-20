@@ -4,7 +4,6 @@
   height: 64px;
   z-index: 1;
   transition: all 0.5s ease-in-out;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 16px 96px;
   display: flex;
   justify-content: space-between;

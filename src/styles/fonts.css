@@ -12,3 +12,18 @@
   font-family: 'Etna';
   src: url('../assets/fonts/etna.otf');
 }
+
+body {
+  font-family: 'Dolce Vita', sans-serif;
+  font-size: 1.1rem;
+}
+
+strong {
+  font-family: 'Dolce Vita Heavy', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Dolce Vita Heavy', sans-serif;
+}
