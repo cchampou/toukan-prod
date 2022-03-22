@@ -33,6 +33,8 @@
 .video-band {
   filter: brightness(0.3);
   transition: filter 0.2s ease-in-out;
+  margin-bottom: -5px;
+  width: 100%;
 }
 
 .video-band:hover {
