@@ -13,7 +13,7 @@ export const PresentationContainer = styled('section')`
   padding: 96px 10vw;
 `;
 
-export const PresentationFlex = styled('p')`
+export const PresentationFlex = styled('div')`
   display: flex;
   align-items: center;
 
