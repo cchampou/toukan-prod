@@ -23,10 +23,10 @@ function Homepage() {
   useLayoutEffect(() => {
     const percent = Math.random();
     mainPlayer.current.addEventListener('canplay', () => {
-      console.log('canplay');
       if (!randomStartFlag.current) {
         const targetTc = Math.ceil(mainPlayer.current.duration * percent);
         mainPlayer.current.currentTime = targetTc;
+        mainPlayer.current.play();
         randomStartFlag.current = true;
       }
     });
