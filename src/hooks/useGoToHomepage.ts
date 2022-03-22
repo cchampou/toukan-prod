@@ -1,11 +1,12 @@
 import { useNavigate } from 'react-router-dom';
+import { useCallback } from 'react';
 
 function useGoToHomepage() {
   const navigate = useNavigate();
 
-  const clickHandler = () => {
+  const clickHandler = useCallback(() => {
     navigate('/');
-  };
+  }, [navigate]);
 
   return clickHandler;
 }
