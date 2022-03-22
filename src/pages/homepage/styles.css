@@ -30,11 +30,18 @@
   left: 50%;
 }
 
+#homepage-video-bands-container {
+  width: 60vw;
+  margin: auto;
+  box-shadow: 0 0 30px 10px gray;
+  padding-right: 0;
+}
+
 .video-band {
   filter: brightness(0.3);
   transition: filter 0.2s ease-in-out;
-  margin-bottom: -5px;
-  width: 100%;
+  margin-bottom: -6px;
+  width: calc(100% + 1px);
 }
 
 .video-band:hover {
