@@ -47,16 +47,18 @@ function Homepage() {
             qualitative.
           </PresentationParagraph>
         </PresentationContainer>
-        <div id="homepage-video-bands-container">
-          <video ref={playerRefCorpo} className="video-band" loop muted>
-            <source src="https://toukan-production.s3.eu-west-3.amazonaws.com/corpo.mp4" />
-          </video>
-          <video ref={playerRefClip} className="video-band" loop muted>
-            <source src="https://toukan-production.s3.eu-west-3.amazonaws.com/clip.mp4" />
-          </video>
-          <video ref={playerRefDrone} className="video-band" loop muted>
-            <source src="https://toukan-production.s3.eu-west-3.amazonaws.com/drone.mp4" />
-          </video>
+        <div id="homepage-gray-section">
+          <div id="homepage-video-bands-container">
+            <video ref={playerRefCorpo} className="video-band" loop muted>
+              <source src="https://toukan-production.s3.eu-west-3.amazonaws.com/corpo.mp4" />
+            </video>
+            <video ref={playerRefClip} className="video-band" loop muted>
+              <source src="https://toukan-production.s3.eu-west-3.amazonaws.com/clip.mp4" />
+            </video>
+            <video ref={playerRefDrone} className="video-band" loop muted>
+              <source src="https://toukan-production.s3.eu-west-3.amazonaws.com/drone.mp4" />
+            </video>
+          </div>
         </div>
       </ContentContainer>
     </>
