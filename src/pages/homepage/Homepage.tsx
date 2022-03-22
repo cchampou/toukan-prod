@@ -12,7 +12,9 @@ import useHoverPlay from '../../hooks/useHoverPlay';
 
 function Homepage() {
   const { isScrolled } = useTopNavVisibility();
-  const { playerRef } = useHoverPlay();
+  const { playerRef: playerRefCorpo } = useHoverPlay();
+  const { playerRef: playerRefClip } = useHoverPlay();
+  const { playerRef: playerRefDrone } = useHoverPlay();
 
   return (
     <>
@@ -45,8 +47,14 @@ function Homepage() {
             qualitative.
           </PresentationParagraph>
         </PresentationContainer>
-        <video ref={playerRef} loop muted>
+        <video ref={playerRefCorpo} loop muted>
           <source src="https://toukan-production.s3.eu-west-3.amazonaws.com/corpo.mp4" />
+        </video>
+        <video ref={playerRefClip} loop muted>
+          <source src="https://toukan-production.s3.eu-west-3.amazonaws.com/clip.mp4" />
+        </video>
+        <video ref={playerRefDrone} loop muted>
+          <source src="https://toukan-production.s3.eu-west-3.amazonaws.com/drone.mp4" />
         </video>
       </ContentContainer>
     </>
