@@ -13,6 +13,16 @@ export const PresentationContainer = styled('section')`
   padding: 80px 10vw;
 `;
 
+export const PresentationFlex = styled('p')`
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-left: 20px;
+    width: 40%;
+  }
+`;
+
 export const PresentationParagraph = styled('p')`
   width: 40vw;
   line-height: 1.5;
