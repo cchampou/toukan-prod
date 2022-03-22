@@ -26,4 +26,3 @@ Preset used by eslint are proposed by AirBnB.
 
 Currently, the website is auto-deployed on Vercel. The production website is accessible
 [here](https://toukanproduction.com).
-`````
