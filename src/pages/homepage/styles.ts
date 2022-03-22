@@ -18,7 +18,7 @@ export const PresentationFlex = styled('p')`
   align-items: center;
 
   img {
-    margin-left: 20px;
+    margin-left: 64px;
     width: 40%;
   }
 `;
