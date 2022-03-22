@@ -10,7 +10,7 @@ export const ContentContainer = styled('div')`
 `;
 
 export const PresentationContainer = styled('section')`
-  padding: 80px 10vw;
+  padding: 96px 10vw;
 `;
 
 export const PresentationFlex = styled('p')`
