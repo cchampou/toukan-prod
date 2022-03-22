@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import logoWhite from '../../assets/logo-white.png';
 import monitor from '../../assets/monitor.jpg';
 import Scroll from '../../atoms/scroll/Scroll';
