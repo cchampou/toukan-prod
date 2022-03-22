@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const ContentContainer = styled('div')`
-  width: 100vw;
+  width: 100%;
   background-color: ${({ theme }) => theme.colors.light};
   color: ${({ theme }) => theme.colors.dark};
   transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
