@@ -29,7 +29,7 @@ function useTopNavVisibility() {
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      window.addEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 
