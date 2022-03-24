@@ -1,4 +1,5 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React from 'react';
+
 import logoWhite from '../../assets/logo-white.png';
 import monitor from '../../assets/monitor.jpg';
 import Scroll from '../../atoms/scroll/Scroll';
@@ -14,29 +15,17 @@ import useHoverPlay from '../../hooks/useHoverPlay';
 
 function Homepage() {
   const { isScrolled } = useTopNavVisibility();
-  const mainPlayer = useRef<HTMLVideoElement>();
-  const randomStartFlag = useRef(false);
   const { playerRef: playerRefCorpo } = useHoverPlay();
   const { playerRef: playerRefClip } = useHoverPlay();
   const { playerRef: playerRefDrone } = useHoverPlay();
 
-  useLayoutEffect(() => {
-    const percent = Math.random();
-    mainPlayer.current.addEventListener('canplay', () => {
-      if (!randomStartFlag.current) {
-        const targetTc = Math.ceil(mainPlayer.current.duration * percent);
-        mainPlayer.current.currentTime = targetTc;
-        mainPlayer.current.play();
-        randomStartFlag.current = true;
-      }
-    });
-  }, []);
-
   return (
     <>
-      <video id="homepage-video" ref={mainPlayer} loop muted>
+      <video id="homepage-video" loop muted>
         <source
-          src="https://toukan-production.s3.eu-west-3.amazonaws.com/toukan.webm"
+          src={`https://toukan-production.s3.eu-west-3.amazonaws.com/toukan.webm#t=${Math.ceil(
+            232 * Math.random()
+          )}`}
           type="video/webm"
         />
       </video>
