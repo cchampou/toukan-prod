@@ -10,7 +10,7 @@
   width: calc(100% + 1px);
 }
 
-.video-band:hover {
+.video-band-container:hover .video-band {
   filter: brightness(1);
 }
 

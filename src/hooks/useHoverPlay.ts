@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef } from 'react';
 
 function useHoverPlay() {
   const playerRef = useRef<HTMLVideoElement>(null);
+  const domElement = useRef<HTMLDivElement>(null);
 
   const play = () => {
     if (playerRef.current) playerRef.current.play();
@@ -12,20 +13,21 @@ function useHoverPlay() {
   };
 
   useLayoutEffect(() => {
-    if (playerRef.current) {
-      playerRef.current.addEventListener('mouseenter', play);
-      playerRef.current.addEventListener('mouseleave', pause);
+    if (domElement.current) {
+      domElement.current.addEventListener('mouseenter', play);
+      domElement.current.addEventListener('mouseleave', pause);
     }
     return () => {
-      if (playerRef.current) {
-        playerRef.current.removeEventListener('mouseenter', play);
-        playerRef.current.removeEventListener('mouseleave', pause);
+      if (domElement.current) {
+        domElement.current.removeEventListener('mouseenter', play);
+        domElement.current.removeEventListener('mouseleave', pause);
       }
     };
   }, []);
 
   return {
     playerRef,
+    domElement,
   };
 }
 
