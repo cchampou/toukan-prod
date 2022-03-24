@@ -8,11 +8,12 @@
   "headers": [
     {
       "source": "/",
-      "headers" : [
+      "headers": [
         {
-          "key" : "Cache-Control",
-          "value" : "no-store, no-cache"
+          "key": "Cache-Control",
+          "value": "no-store, no-cache"
         }
       ]
-    },
+    }
+  ]
 }
