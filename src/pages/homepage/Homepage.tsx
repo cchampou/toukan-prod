@@ -11,13 +11,10 @@ import {
   PresentationFlex,
   PresentationParagraph,
 } from './styles';
-import useHoverPlay from '../../hooks/useHoverPlay';
+import VideoBand from '../../atoms/videoBand/VideoBand';
 
 function Homepage() {
   const { isScrolled } = useTopNavVisibility();
-  const { playerRef: playerRefCorpo } = useHoverPlay();
-  const { playerRef: playerRefClip } = useHoverPlay();
-  const { playerRef: playerRefDrone } = useHoverPlay();
 
   return (
     <>
@@ -64,16 +61,21 @@ function Homepage() {
         </PresentationContainer>
         <div id="homepage-gray-section">
           <div id="homepage-video-bands-container">
-            <video ref={playerRefCorpo} className="video-band" loop muted>
-              <h2>Test</h2>
-              <source src="https://toukan-production.s3.eu-west-3.amazonaws.com/corpo.mp4" />
-            </video>
-            <video ref={playerRefClip} className="video-band" loop muted>
-              <source src="https://toukan-production.s3.eu-west-3.amazonaws.com/clip.mp4" />
-            </video>
-            <video ref={playerRefDrone} className="video-band" loop muted>
-              <source src="https://toukan-production.s3.eu-west-3.amazonaws.com/drone.mp4" />
-            </video>
+            <VideoBand
+              videoSource="https://toukan-production.s3.eu-west-3.amazonaws.com/corpo.mp4"
+              text="Corporate"
+              linkTo="/corpo"
+            />
+            <VideoBand
+              videoSource="https://toukan-production.s3.eu-west-3.amazonaws.com/clip.mp4"
+              text="Clip"
+              linkTo="/clip"
+            />
+            <VideoBand
+              videoSource="https://toukan-production.s3.eu-west-3.amazonaws.com/drone.mp4"
+              text="Drone"
+              linkTo="/drone"
+            />
           </div>
         </div>
       </ContentContainer>

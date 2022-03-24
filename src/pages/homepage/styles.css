@@ -56,14 +56,3 @@
   box-shadow: 0 0 40px black;
   padding-right: 0;
 }
-
-.video-band {
-  filter: brightness(0.3);
-  transition: filter 0.2s ease-in-out;
-  margin-bottom: -6px;
-  width: calc(100% + 1px);
-}
-
-.video-band:hover {
-  filter: brightness(1);
-}
