@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: 'Dolce Vita Light';
+  src: url('../assets/fonts/DolceVitaLight.ttf');
+}
+
+@font-face {
   font-family: 'Etna';
   src: url('../assets/fonts/etna.otf');
 }
