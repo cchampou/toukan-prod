@@ -21,7 +21,7 @@ function Homepage() {
 
   return (
     <>
-      <video id="homepage-video" loop muted>
+      <video id="homepage-video" loop muted autoPlay>
         <source
           src={`https://toukan-production.s3.eu-west-3.amazonaws.com/toukan.webm#t=${Math.ceil(
             232 * Math.random()
