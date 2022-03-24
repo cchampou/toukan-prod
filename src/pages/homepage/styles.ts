@@ -26,4 +26,5 @@ export const PresentationFlex = styled('div')`
 export const PresentationParagraph = styled('p')`
   width: 40vw;
   line-height: 1.5;
+  font-size: 16px;
 `;
