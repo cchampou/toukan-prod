@@ -4,7 +4,7 @@ import logoWhite from '../../assets/logo-white.png';
 import './styles.css';
 import useGoToHomepage from '../../hooks/useGoToHomepage';
 import useTopNavVisibility from '../../hooks/useTopNavVisibility';
-import { Nav, RightSection } from './styles';
+import { Nav, RightSection, SocialPosition } from './styles';
 import darkContext from '../../contexts/dark';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -23,7 +23,6 @@ function TopNav() {
       className={`top-nav-default ${
         isMouseTop || isScrolled ? 'show-top-nav' : ''
       }`}
-      id="top-nav-main"
     >
       <img
         src={isDark ? logoWhite : logoBlack}

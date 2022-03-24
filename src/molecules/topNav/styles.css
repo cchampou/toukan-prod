@@ -1,14 +1,3 @@
-#top-nav-main {
-  position: fixed;
-  width: calc(100vw - 192px);
-  height: 48px;
-  z-index: 2;
-  transition: all 0.5s ease-in-out;
-  padding: 16px 96px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .top-nav-default {
   opacity: 0;
   margin-top: -5px;

@@ -14,7 +14,7 @@ function useTopNavVisibility() {
 
   const handleMouseMove = useCallback(
     (e: MouseEvent) => {
-      if (e.y < window.innerHeight / 2.5) {
+      if (e.y < window.innerHeight / 2.5 || e.x > window.innerWidth * 0.9) {
         setIsMouseTop(true);
       } else {
         setIsMouseTop(false);
