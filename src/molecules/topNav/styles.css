@@ -1,7 +1,7 @@
 #top-nav-main {
   position: fixed;
   width: calc(100vw - 192px);
-  height: 64px;
+  height: 48px;
   z-index: 1;
   transition: all 0.5s ease-in-out;
   padding: 16px 96px;
