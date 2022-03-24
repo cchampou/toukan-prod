@@ -17,6 +17,7 @@ declare module '@emotion/react' {
     fonts: {
       primary: string;
       intense: string;
+      light: string;
     };
   }
 }

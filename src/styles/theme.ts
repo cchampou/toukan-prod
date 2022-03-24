@@ -8,6 +8,7 @@ export const lightTheme: Theme = {
   fonts: {
     primary: 'Dolce Vita',
     intense: 'Dolce Vita Heavy',
+    light: 'Dolce Vita Light',
   },
 };
 
