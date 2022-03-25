@@ -3,9 +3,9 @@ import { Theme } from '@emotion/react';
 export const lightTheme: Theme = {
   colors: {
     dark: '#101010',
-    lightDark: '#1f1f1f',
+    lightDark: '#2f2f2f',
     light: '#fafafa',
-    darkLight: '#f0f0f0',
+    darkLight: '#d0d0d0',
   },
   fonts: {
     primary: 'Dolce Vita',

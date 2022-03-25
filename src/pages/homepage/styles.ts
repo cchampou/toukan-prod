@@ -27,8 +27,9 @@ export const PresentationParagraph = styled('p')`
   width: 40vw;
   line-height: 1.5;
   font-size: 15px;
-  letter-spacing: 1px;
-  font-family: 'Dolce Vita Light';
+  letter-spacing: 0.5px;
+  font-family: Arial;
+  font-weight: 600;
 `;
 
 export const GraySection = styled('div')`
