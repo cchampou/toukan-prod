@@ -1,6 +1,6 @@
 import { faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useCallback, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { Container, Play } from './styles';
 
 function Video({ type, src, poster }) {
@@ -17,6 +17,10 @@ function Video({ type, src, poster }) {
       setPlaying(false);
     }
   }, [playerRef, setPlaying]);
+
+  useEffect(() => {
+    if (playerRef.current) playerRef.current.volume = 0.5;
+  }, [playerRef]);
 
   return (
     <Container>
