@@ -24,7 +24,8 @@ body {
 }
 
 strong {
-  font-family: 'Dolce Vita Heavy', sans-serif;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
 }
 
 h2 {

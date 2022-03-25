@@ -28,8 +28,7 @@ export const PresentationParagraph = styled('p')`
   line-height: 1.5;
   font-size: 15px;
   letter-spacing: 0.5px;
-  font-family: Arial;
-  font-weight: 600;
+  font-family: ${({ theme }) => theme.fonts.text};
 `;
 
 export const GraySection = styled('div')`
