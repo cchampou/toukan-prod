@@ -18,14 +18,23 @@
   src: url('../assets/fonts/etna.otf');
 }
 
+@font-face {
+  font-family: 'Candara';
+  src: url('../assets/fonts/Candara.ttf');
+}
+
+@font-face {
+  font-family: 'Candara Bold';
+  src: url('../assets/fonts/CandaraBold.ttf');
+}
+
 body {
   font-family: 'Dolce Vita', sans-serif;
   font-size: 1.1rem;
 }
 
 strong {
-  font-family: Arial, sans-serif;
-  font-weight: 600;
+  font-family: 'Candara Bold', Arial, sans-serif;
 }
 
 h2 {

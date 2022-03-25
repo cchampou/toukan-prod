@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 // eslint-disable-next-line import/prefer-default-export
 export const Button = styled('button')`
-  padding: 16px 32px;
+  padding: 8px 24px;
   background-color: ${({ theme }) => theme.colors.dark};
   color: ${({ theme }) => theme.colors.light};
   transition: all 0.5s ease-in-out;

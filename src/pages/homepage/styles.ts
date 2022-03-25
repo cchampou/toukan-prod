@@ -26,7 +26,7 @@ export const PresentationFlex = styled('div')`
 export const PresentationParagraph = styled('p')`
   width: 40vw;
   line-height: 1.5;
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: 0.5px;
   font-family: ${({ theme }) => theme.fonts.text};
 `;

@@ -11,7 +11,7 @@ export const lightTheme: Theme = {
     primary: 'Dolce Vita',
     intense: 'Dolce Vita Heavy',
     light: 'Dolce Vita Light',
-    text: 'Arial, sans-serif',
+    text: 'Candara, Arial, sans-serif',
   },
 };
 
