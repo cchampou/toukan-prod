@@ -21,7 +21,7 @@ export const Split = styled('div')`
     margin-bottom: 96px;
   }
 
-  video {
+  div {
     margin: auto;
     width: 50%;
   }

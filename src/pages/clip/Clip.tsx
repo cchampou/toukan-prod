@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Split } from './styles';
+import Video from '../../molecules/video/Video';
 
 function Clip() {
   return (
@@ -19,20 +20,16 @@ function Clip() {
           même <strong>sportif</strong>. Souvent mis en scène pour raconter une
           histoire, une idée ou simplement une direction artistique.
         </p>
-        <video controls>
-          <source
-            type="video/mp4"
-            src="https://toukan-production.s3.eu-west-3.amazonaws.com/Clip Demo.mp4"
-          />
-        </video>
+        <Video
+          type="video/mp4"
+          src="https://toukan-production.s3.eu-west-3.amazonaws.com/clip-demo.mp4"
+        />
       </Split>
       <Split>
-        <video controls>
-          <source
-            type="video/mp4"
-            src="https://toukan-production.s3.eu-west-3.amazonaws.com/Live Demo.mp4"
-          />
-        </video>
+        <Video
+          type="video/mp4"
+          src="https://toukan-production.s3.eu-west-3.amazonaws.com/live.mp4"
+        />
         <p>
           Les lives sont des moments uniques souvent liés au milieu{' '}
           <strong>musical</strong> et <strong>événementiel</strong> qui
@@ -48,12 +45,10 @@ function Clip() {
           musique est un réel choix de direction artistique propre à chaques
           établissements ou ambiance souhaitée.
         </p>
-        <video controls>
-          <source
-            type="video/mp4"
-            src="https://toukan-production.s3.eu-west-3.amazonaws.com/Aftermovie Demo.mp4"
-          />
-        </video>
+        <Video
+          type="video/mp4"
+          src="https://toukan-production.s3.eu-west-3.amazonaws.com/AfterMovie Demo.mp4"
+        />
       </Split>
     </Container>
   );
