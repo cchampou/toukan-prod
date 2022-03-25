@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useCallback, useRef, useState } from 'react';
 import { Container, Play } from './styles';
 
-function Video({ type, src }) {
+function Video({ type, src, poster }) {
   const playerRef = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
 
@@ -23,7 +23,7 @@ function Video({ type, src }) {
       {/* <Play onClick={togglePlayPause}> */}
       {/*  <FontAwesomeIcon icon={playing ? faPause : faPlay} /> */}
       {/* </Play> */}
-      <video ref={playerRef} controls>
+      <video ref={playerRef} controls poster={poster}>
         <source type={type} src={src} />
       </video>
     </Container>

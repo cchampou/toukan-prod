@@ -1,6 +1,9 @@
 import React from 'react';
 import { Container, Split } from './styles';
 import Video from '../../molecules/video/Video';
+import clipThumbnail from '../../assets/images/thumbnails/clip.jpg';
+import liveThumbnail from '../../assets/images/thumbnails/live.jpg';
+import afterMovieThumbnail from '../../assets/images/thumbnails/aftermovie.jpg';
 
 function Clip() {
   return (
@@ -23,12 +26,14 @@ function Clip() {
         <Video
           type="video/mp4"
           src="https://toukan-production.s3.eu-west-3.amazonaws.com/clip-demo.mp4"
+          poster={clipThumbnail}
         />
       </Split>
       <Split>
         <Video
           type="video/mp4"
           src="https://toukan-production.s3.eu-west-3.amazonaws.com/live.mp4"
+          poster={liveThumbnail}
         />
         <p>
           Les lives sont des moments uniques souvent liés au milieu{' '}
@@ -48,6 +53,7 @@ function Clip() {
         <Video
           type="video/mp4"
           src="https://toukan-production.s3.eu-west-3.amazonaws.com/AfterMovie Demo.mp4"
+          poster={afterMovieThumbnail}
         />
       </Split>
     </Container>
