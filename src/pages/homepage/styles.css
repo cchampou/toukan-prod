@@ -44,15 +44,3 @@
   top: 90%;
   left: 50%;
 }
-
-#homepage-gray-section {
-  background-color: #505050;
-  padding: 150px 0;
-}
-
-#homepage-video-bands-container {
-  width: 80vw;
-  margin: auto;
-  box-shadow: 0 0 40px black;
-  padding-right: 0;
-}

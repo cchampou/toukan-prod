@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { Text } from './styles';
 import useHoverPlay from '../../hooks/useHoverPlay';
 import './styles.css';
 
@@ -20,7 +21,7 @@ function VideoBand({ videoSource, text, linkTo }: Props) {
       ref={domElement}
       onClick={() => navigate(linkTo)}
     >
-      <h2>{text}</h2>
+      <Text>{text}</Text>
       <video ref={playerRef} className="video-band" loop muted>
         <source src={videoSource} />
       </video>

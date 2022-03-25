@@ -12,7 +12,9 @@ declare module '@emotion/react' {
   export interface Theme {
     colors: {
       dark: string;
+      lightDark: string;
       light: string;
+      darkLight: string;
     };
     fonts: {
       primary: string;

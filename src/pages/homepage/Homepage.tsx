@@ -7,9 +7,11 @@ import './styles.css';
 import useTopNavVisibility from '../../hooks/useTopNavVisibility';
 import {
   ContentContainer,
+  GraySection,
   PresentationContainer,
   PresentationFlex,
   PresentationParagraph,
+  VideoBandsContainer,
 } from './styles';
 import VideoBand from '../../atoms/videoBand/VideoBand';
 
@@ -59,8 +61,8 @@ function Homepage() {
             <img src={monitor} alt="Moi, moniteur" />
           </PresentationFlex>
         </PresentationContainer>
-        <div id="homepage-gray-section">
-          <div id="homepage-video-bands-container">
+        <GraySection>
+          <VideoBandsContainer>
             <VideoBand
               videoSource="https://toukan-production.s3.eu-west-3.amazonaws.com/corpo.mp4"
               text="Corporate"
@@ -76,8 +78,8 @@ function Homepage() {
               text="Drone"
               linkTo="/drone"
             />
-          </div>
-        </div>
+          </VideoBandsContainer>
+        </GraySection>
       </ContentContainer>
     </>
   );

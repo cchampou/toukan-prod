@@ -30,3 +30,16 @@ export const PresentationParagraph = styled('p')`
   letter-spacing: 1px;
   font-family: 'Dolce Vita Light';
 `;
+
+export const GraySection = styled('div')`
+  background-color: ${({ theme }) => theme.colors.darkLight};
+  padding: 150px 0;
+  transition: background 0.5s ease-in-out;
+`;
+
+export const VideoBandsContainer = styled('div')`
+  width: 80vw;
+  margin: auto;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+  padding-right: 0;
+`;
