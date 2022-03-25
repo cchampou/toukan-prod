@@ -14,7 +14,7 @@ export const SocialContainer = styled('div')<Props>`
   right: 0;
   transform: ${({ show }) =>
     show ? 'translate(0%, -50%)' : 'translate(100%, -50%)'};
-  transition: transform 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
   z-index: 5;

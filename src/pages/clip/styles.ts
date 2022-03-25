@@ -7,6 +7,7 @@ export const Container = styled('div')`
   padding-top: 96px;
   background-color: ${({ theme }) => theme.colors.light};
   color: ${({ theme }) => theme.colors.dark};
+  transition: all 0.5s ease-in-out;
   min-height: calc(100vh - 244px);
 `;
 
