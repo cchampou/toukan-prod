@@ -28,6 +28,11 @@
   src: url('../assets/fonts/CandaraBold.ttf');
 }
 
+@font-face {
+  font-family: 'Candara Light';
+  src: url('../assets/fonts/CandaraLight.ttf');
+}
+
 body {
   font-family: 'Dolce Vita', sans-serif;
   font-size: 1.1rem;
