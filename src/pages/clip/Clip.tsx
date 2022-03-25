@@ -6,7 +6,7 @@ function Clip() {
   return (
     <Container>
       <h1>Clips</h1>
-      <p>
+      <p style={{ textAlign: 'center', width: '60%', margin: 'auto' }}>
         Nous vous proposons plusieurs types de clips différents selon l’ambiance
         souhaité, votre profil ou encore la mise en scène désirée. entre le clip{' '}
         <strong>cinématique</strong>, le <strong>live</strong> ou l’

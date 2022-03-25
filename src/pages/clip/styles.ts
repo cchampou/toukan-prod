@@ -9,6 +9,7 @@ export const Container = styled('div')`
   color: ${({ theme }) => theme.colors.dark};
   transition: all 0.5s ease-in-out;
   min-height: calc(100vh - 244px);
+  font-size: 18px;
 `;
 
 export const Split = styled('div')`
