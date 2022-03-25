@@ -4,6 +4,7 @@ import TopNav from './molecules/topNav/TopNav';
 import Homepage from './pages/homepage/Homepage';
 import NotFound from './pages/notFound/NotFound';
 import Socials from './molecules/socials/Socials';
+import Clip from './pages/clip/Clip';
 
 function Router() {
   return (
@@ -12,6 +13,7 @@ function Router() {
       <Socials />
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/clip" element={<Clip />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

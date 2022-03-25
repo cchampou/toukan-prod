@@ -34,7 +34,7 @@
 }
 
 body {
-  font-family: 'Dolce Vita', sans-serif;
+  font-family: 'Candara Light', sans-serif;
   font-size: 1.1rem;
 }
 
@@ -42,9 +42,17 @@ strong {
   font-family: 'Candara Bold', Arial, sans-serif;
 }
 
+h1,
 h2 {
   text-align: center;
-  font-size: 2.5rem;
   margin: 64px 0;
   font-family: 'Dolce Vita Heavy', sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 2.5rem;
 }
