@@ -2,6 +2,9 @@ html,
 body,
 #root {
   margin: 0;
+  line-height: 1.25;
+  font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
 a {
