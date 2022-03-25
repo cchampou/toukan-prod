@@ -1,8 +1,11 @@
 import React, { useCallback, useEffect } from 'react';
+import * as path from 'path';
+import { useLocation } from 'react-router-dom';
 
 function useTopNavVisibility() {
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [isMouseTop, setIsMouseTop] = React.useState(false);
+  const { pathname } = useLocation();
 
   const handleScroll = useCallback(() => {
     if (window.scrollY > 0) {
@@ -33,7 +36,7 @@ function useTopNavVisibility() {
     };
   }, []);
 
-  return { isScrolled, isMouseTop };
+  return { isScrolled: pathname !== '/' || isScrolled, isMouseTop };
 }
 
 export default useTopNavVisibility;
