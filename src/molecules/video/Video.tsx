@@ -27,7 +27,7 @@ function Video({ type, src, poster }) {
       {/* <Play onClick={togglePlayPause}> */}
       {/*  <FontAwesomeIcon icon={playing ? faPause : faPlay} /> */}
       {/* </Play> */}
-      <video ref={playerRef} controls poster={poster}>
+      <video ref={playerRef} controls poster={poster} controlsList="nodownload">
         <source type={type} src={src} />
       </video>
     </Container>
