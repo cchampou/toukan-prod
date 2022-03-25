@@ -17,6 +17,7 @@ export const SocialContainer = styled('div')<Props>`
   transition: transform 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
+  z-index: 5;
 
   a {
     padding: 16px;
