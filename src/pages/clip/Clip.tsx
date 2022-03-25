@@ -16,8 +16,9 @@ function Clip() {
         <strong>aftermovie</strong>, chacun d’entre eux répondront à des
         attentes différentes selon votre profil et vos projets.
       </p>
+      <h2>Cinématique</h2>
       <Split>
-        <p>
+        <p style={{ textAlign: 'right' }}>
           Le Clips Cinématique est fréquemment utilisé dans le milieu{' '}
           <strong>musical</strong> mais également <strong>artistique</strong> ou
           même <strong>sportif</strong>. Souvent mis en scène pour raconter une
@@ -29,6 +30,7 @@ function Clip() {
           poster={clipThumbnail}
         />
       </Split>
+      <h2>Live</h2>
       <Split>
         <Video
           type="video/mp4"
@@ -42,6 +44,7 @@ function Clip() {
           être parfaite car chaque moment loupé à l’image est irremplaçable.
         </p>
       </Split>
+      <h2>Aftermovie</h2>
       <Split>
         <p>
           L’aftermovie est un genre très recherché dans le monde{' '}
