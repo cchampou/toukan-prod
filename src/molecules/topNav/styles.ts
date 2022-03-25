@@ -3,11 +3,11 @@ import styled from '@emotion/styled';
 export const Nav = styled('nav')`
   background-color: ${({ theme }) => theme.colors.light};
   position: fixed;
-  width: calc(100vw - 192px);
+  width: 90%;
   height: 48px;
   z-index: 2;
   transition: all 0.5s ease-in-out;
-  padding: 16px 96px;
+  padding: 16px 5%;
   display: flex;
   justify-content: space-between;
 `;

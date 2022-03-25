@@ -45,5 +45,6 @@ strong {
 h2 {
   text-align: center;
   font-size: 2.5rem;
+  margin: 64px 0;
   font-family: 'Dolce Vita Heavy', sans-serif;
 }
