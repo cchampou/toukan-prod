@@ -46,7 +46,7 @@ function Clip() {
       </Split>
       <h2>Aftermovie</h2>
       <Split>
-        <p>
+        <p style={{ textAlign: 'right' }}>
           L’aftermovie est un genre très recherché dans le monde{' '}
           <strong>festif</strong> et <strong>evenementiel</strong>. Souvent
           accompagné d’un <strong>montage dynamique</strong> de précision, la

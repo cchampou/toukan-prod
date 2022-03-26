@@ -5,6 +5,7 @@ import Homepage from './pages/homepage/Homepage';
 import NotFound from './pages/notFound/NotFound';
 import Socials from './molecules/socials/Socials';
 import Clip from './pages/clip/Clip';
+import Drone from './pages/drone/Drone';
 
 function Router() {
   return (
@@ -14,6 +15,7 @@ function Router() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/clip" element={<Clip />} />
+        <Route path="/drone" element={<Drone />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
