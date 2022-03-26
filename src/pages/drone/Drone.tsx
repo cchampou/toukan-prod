@@ -45,8 +45,9 @@ function Drone() {
           plans <strong>inédits</strong> pour vos projets. Que ce soit pour des
           vidéos <strong>sportives</strong>, des <strong>clips</strong> ou des
           vidéos <strong>corporates</strong>, le FPV se démocratise de plus en
-          plus dans le milieu de l’audiovisuel. Pour en savoir plus, cliquez
-          ici.
+          plus dans le milieu de l’audiovisuel.
+          <br />
+          <em>Pour en savoir plus, cliquez ici.</em>
         </p>
       </Split>
     </Container>
