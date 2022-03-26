@@ -29,7 +29,7 @@ export const PresentationFlex = styled('div')`
 
   @media (max-width: 800px) {
     flex-direction: column;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 
     img {
       margin: auto;
@@ -57,7 +57,7 @@ export const GraySection = styled('div')`
   transition: background 0.5s ease-in-out;
 
   @media (max-width: 800px) {
-    padding: 64px 0;
+    padding: 0;
   }
 `;
 
