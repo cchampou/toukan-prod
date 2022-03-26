@@ -29,6 +29,7 @@ export const PresentationFlex = styled('div')`
 
   @media (max-width: 800px) {
     flex-direction: column;
+    margin-bottom: 32px;
 
     img {
       margin: auto;
@@ -52,8 +53,12 @@ export const PresentationParagraph = styled('p')`
 
 export const GraySection = styled('div')`
   background-color: ${({ theme }) => theme.colors.darkLight};
-  padding: 150px 0;
+  padding: 144px 0;
   transition: background 0.5s ease-in-out;
+
+  @media (max-width: 800px) {
+    padding: 64px 0;
+  }
 `;
 
 export const VideoBandsContainer = styled('div')`
