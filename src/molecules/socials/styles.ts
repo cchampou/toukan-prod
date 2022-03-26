@@ -23,4 +23,13 @@ export const SocialContainer = styled('div')<Props>`
     padding: 16px;
     text-align: center;
   }
+
+  @media (max-width: 600px) {
+    top: 50%;
+    font-size: 12px;
+
+    a {
+      padding: 8px;
+    }
+  }
 `;
