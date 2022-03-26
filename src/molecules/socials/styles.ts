@@ -26,7 +26,7 @@ export const SocialContainer = styled('div')<Props>`
 
   @media (max-width: 600px) {
     top: 50%;
-    font-size: 12px;
+    font-size: 16px;
 
     a {
       padding: 8px;

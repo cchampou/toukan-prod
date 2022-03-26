@@ -20,6 +20,13 @@
   animation: fadein 2s ease-in-out;
 }
 
+@media (max-width: 600px) {
+  #homepage-video {
+    height: calc(100vh - 64px);
+    margin-top: 64px;
+  }
+}
+
 #homepage-logo {
   position: absolute;
   top: 50%;
