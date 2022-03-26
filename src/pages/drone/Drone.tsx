@@ -16,7 +16,7 @@ function Drone() {
         </p>
         <Video
           type="video/mp4"
-          src="https://toukan-production.s3.eu-west-3.amazonaws.com/clip-demo.mp4"
+          src="https://toukan-production.s3.eu-west-3.amazonaws.com/Drone Demo.mp4"
           poster={droneThumbnail}
         />
       </Split>
@@ -24,7 +24,7 @@ function Drone() {
       <Split>
         <Video
           type="video/mp4"
-          src="https://toukan-production.s3.eu-west-3.amazonaws.com/live.mp4"
+          src="https://toukan-production.s3.eu-west-3.amazonaws.com/FPV Demo.mp4"
           poster={fpvThumbnail}
         />
         <p>
