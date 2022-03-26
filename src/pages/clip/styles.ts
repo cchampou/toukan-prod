@@ -13,6 +13,7 @@ export const Container = styled('div')`
 
 export const Split = styled('div')`
   display: flex;
+  padding: 96px 0;
   align-items: flex-end;
 
   p {

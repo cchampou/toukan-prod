@@ -16,9 +16,9 @@ function Clip() {
         <strong>aftermovie</strong>, chacun d’entre eux répondront à des
         attentes différentes selon votre profil et vos projets.
       </p>
-      <h2>Cinématique</h2>
       <Split>
         <p style={{ textAlign: 'right' }}>
+          <h2 style={{ textAlign: 'right' }}>Cinématique</h2>
           Le Clips Cinématique est fréquemment utilisé dans le milieu{' '}
           <strong>musical</strong> mais également <strong>artistique</strong> ou
           même <strong>sportif</strong>. Souvent mis en scène pour raconter une
@@ -30,7 +30,7 @@ function Clip() {
           poster={clipThumbnail}
         />
       </Split>
-      <h2>Live</h2>
+
       <Split>
         <Video
           type="video/mp4"
@@ -38,15 +38,17 @@ function Clip() {
           poster={liveThumbnail}
         />
         <p>
+          <h2 style={{ textAlign: 'left' }}>Live</h2>
           Les lives sont des moments uniques souvent liés au milieu{' '}
           <strong>musical</strong> et <strong>événementiel</strong> qui
           nécessite une expertise de captation vidéo très pointue. La prise doit
           être parfaite car chaque moment loupé à l’image est irremplaçable.
         </p>
       </Split>
-      <h2>Aftermovie</h2>
+
       <Split>
         <p style={{ textAlign: 'right' }}>
+          <h2 style={{ textAlign: 'right' }}>Aftermovie</h2>
           L’aftermovie est un genre très recherché dans le monde{' '}
           <strong>festif</strong> et <strong>evenementiel</strong>. Souvent
           accompagné d’un <strong>montage dynamique</strong> de précision, la
