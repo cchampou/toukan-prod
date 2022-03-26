@@ -61,4 +61,8 @@ export const VideoBandsContainer = styled('div')`
   margin: auto;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
   padding-right: 0;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `;
