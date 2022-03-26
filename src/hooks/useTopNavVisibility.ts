@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect } from 'react';
-import * as path from 'path';
 import { useLocation } from 'react-router-dom';
 
 function useTopNavVisibility() {
