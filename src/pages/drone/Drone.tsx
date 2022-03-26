@@ -7,7 +7,7 @@ import fpvThumbnail from '../../assets/images/thumbnails/fpv.jpg';
 function Drone() {
   return (
     <Container>
-      <h1>Drones</h1>
+      <h1>Les Drones</h1>
       <p style={{ textAlign: 'center', width: '60%', margin: 'auto' }}>...</p>
       <Split>
         <p style={{ textAlign: 'right' }}>

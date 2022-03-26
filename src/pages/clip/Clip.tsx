@@ -8,7 +8,7 @@ import afterMovieThumbnail from '../../assets/images/thumbnails/aftermovie.jpg';
 function Clip() {
   return (
     <Container>
-      <h1>Clips</h1>
+      <h1>Les clips</h1>
       <p style={{ textAlign: 'center', width: '60%', margin: 'auto' }}>
         Nous vous proposons plusieurs types de clips différents selon l’ambiance
         souhaité, votre profil ou encore la mise en scène désirée. entre le clip{' '}
