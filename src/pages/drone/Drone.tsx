@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Split } from '../clip/styles';
+import { Band, Container, Split } from '../clip/styles';
 import Video from '../../molecules/video/Video';
 import droneThumbnail from '../../assets/images/thumbnails/drone.jpg';
 import fpvThumbnail from '../../assets/images/thumbnails/fpv.jpg';
@@ -7,15 +7,17 @@ import fpvThumbnail from '../../assets/images/thumbnails/fpv.jpg';
 function Drone() {
   return (
     <Container>
-      <h1>Les Drones</h1>
-      <p style={{ textAlign: 'center', width: '60%', margin: 'auto' }}>
-        Ayant passé ma <strong>licence professionnelle</strong> de{' '}
-        <strong>télépilote de drone</strong>, je vous propose d’inclure dans vos
-        vidéos de magnifiques plans aériens. Le drone est devenu un outil très
-        convoité dans le milieu de la vidéo, que ce soit pour des{' '}
-        <strong>mariages</strong>, des <strong>clips</strong>, du{' '}
-        <strong>cinéma</strong>, et des vidéos <strong>corporates</strong>.
-      </p>
+      <Band>
+        <h1 style={{ marginTop: 0 }}>Les Drones</h1>
+        <p style={{ textAlign: 'center', width: '60%', margin: 'auto' }}>
+          Ayant passé ma <strong>licence professionnelle</strong> de{' '}
+          <strong>télépilote de drone</strong>, je vous propose d’inclure dans
+          vos vidéos de magnifiques plans aériens. Le drone est devenu un outil
+          très convoité dans le milieu de la vidéo, que ce soit pour des{' '}
+          <strong>mariages</strong>, des <strong>clips</strong>, du{' '}
+          <strong>cinéma</strong>, et des vidéos <strong>corporates</strong>.
+        </p>
+      </Band>
       <Split>
         <p style={{ textAlign: 'right' }}>
           <h2 style={{ textAlign: 'right', margin: 0 }}>Cinématique</h2>

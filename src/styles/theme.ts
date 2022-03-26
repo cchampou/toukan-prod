@@ -5,7 +5,7 @@ export const lightTheme: Theme = {
     dark: '#101010',
     lightDark: '#2f2f2f',
     light: '#fafafa',
-    darkLight: '#d0d0d0',
+    darkLight: '#f1f1f1',
   },
   fonts: {
     primary: 'Dolce Vita',
