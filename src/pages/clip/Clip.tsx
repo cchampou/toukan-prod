@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Split } from './styles';
+import { Band, Container, Split } from './styles';
 import Video from '../../molecules/video/Video';
 import clipThumbnail from '../../assets/images/thumbnails/clip.jpg';
 import liveThumbnail from '../../assets/images/thumbnails/live.jpg';
@@ -8,14 +8,17 @@ import afterMovieThumbnail from '../../assets/images/thumbnails/aftermovie.jpg';
 function Clip() {
   return (
     <Container>
-      <h1>Les clips</h1>
-      <p style={{ textAlign: 'center', width: '60%', margin: 'auto' }}>
-        Nous vous proposons plusieurs types de clips différents selon l’ambiance
-        souhaité, votre profil ou encore la mise en scène désirée. entre le clip{' '}
-        <strong>cinématique</strong>, le <strong>live</strong> ou l’
-        <strong>aftermovie</strong>, chacun d’entre eux répondront à des
-        attentes différentes selon votre profil et vos projets.
-      </p>
+      <Band>
+        <h1 style={{ marginTop: 0 }}>Les clips</h1>
+        <p style={{ textAlign: 'center', width: '60%', margin: 'auto' }}>
+          Nous vous proposons plusieurs types de clips différents selon
+          l’ambiance souhaité, votre profil ou encore la mise en scène désirée.
+          entre le clip <strong>cinématique</strong>, le <strong>live</strong>{' '}
+          ou l’
+          <strong>aftermovie</strong>, chacun d’entre eux répondront à des
+          attentes différentes selon votre profil et vos projets.
+        </p>
+      </Band>
       <Split>
         <p style={{ textAlign: 'right' }}>
           <h2 style={{ textAlign: 'right', margin: 0 }}>Cinématique</h2>

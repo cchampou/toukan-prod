@@ -13,9 +13,8 @@ function Drone() {
         <strong>télépilote de drone</strong>, je vous propose d’inclure dans vos
         vidéos de magnifiques plans aériens. Le drone est devenu un outil très
         convoité dans le milieu de la vidéo, que ce soit pour des{' '}
-        <strong>mariages</strong>, des
-        <strong>clips</strong>, du <strong>cinéma</strong>, et des vidéos{' '}
-        <strong>corporates</strong>.
+        <strong>mariages</strong>, des <strong>clips</strong>, du{' '}
+        <strong>cinéma</strong>, et des vidéos <strong>corporates</strong>.
       </p>
       <Split>
         <p style={{ textAlign: 'right' }}>
