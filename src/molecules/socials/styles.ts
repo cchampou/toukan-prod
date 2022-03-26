@@ -9,7 +9,7 @@ export const SocialContainer = styled('div')<Props>`
   color: ${({ theme }) => theme.colors.dark};
   font-size: 24px;
   transform: translateX(10%);
-  top: 25%;
+  top: 50%;
   position: fixed;
   right: 0;
   transform: ${({ show }) =>
@@ -25,8 +25,8 @@ export const SocialContainer = styled('div')<Props>`
   }
 
   @media (max-width: 600px) {
-    top: 50%;
     font-size: 16px;
+    display: none;
 
     a {
       padding: 8px;

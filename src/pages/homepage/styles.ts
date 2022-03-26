@@ -11,6 +11,10 @@ export const ContentContainer = styled('div')`
 
 export const PresentationContainer = styled('section')`
   padding: 32px 10%;
+
+  @media (max-width: 800px) {
+    padding: 32px 5%;
+  }
 `;
 
 export const PresentationFlex = styled('div')`
@@ -22,12 +26,28 @@ export const PresentationFlex = styled('div')`
     margin-left: 64px;
     height: 400px;
   }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+
+    img {
+      margin: auto;
+      width: 100%;
+      height: auto;
+    }
+  }
 `;
 
 export const PresentationParagraph = styled('p')`
   width: 40vw;
   margin-bottom: 96px;
   font-family: ${({ theme }) => theme.fonts.text};
+
+  @media (max-width: 800px) {
+    margin-bottom: 32px;
+    width: 100%;
+    text-align: justify;
+  }
 `;
 
 export const GraySection = styled('div')`
