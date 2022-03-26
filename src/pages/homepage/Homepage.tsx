@@ -1,7 +1,7 @@
 import React from 'react';
 
 import logoWhite from '../../assets/logo-white.png';
-import monitor from '../../assets/monitor.jpg';
+import monitor from '../../assets/images/monitor.jpg';
 import Scroll from '../../atoms/scroll/Scroll';
 import './styles.css';
 import useTopNavVisibility from '../../hooks/useTopNavVisibility';

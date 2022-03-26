@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Split } from '../clip/styles';
 import Video from '../../molecules/video/Video';
 import droneThumbnail from '../../assets/images/thumbnails/drone.jpg';
-import liveThumbnail from '../../assets/images/thumbnails/live.jpg';
+import fpvThumbnail from '../../assets/images/thumbnails/fpv.jpg';
 
 function Drone() {
   return (
@@ -25,7 +25,7 @@ function Drone() {
         <Video
           type="video/mp4"
           src="https://toukan-production.s3.eu-west-3.amazonaws.com/live.mp4"
-          poster={liveThumbnail}
+          poster={fpvThumbnail}
         />
         <p>
           <h2 style={{ textAlign: 'left', margin: 0 }}>FPV</h2>
