@@ -13,7 +13,7 @@ export const Nav = styled('nav')`
   justify-content: space-between;
 
   @media (max-width: 600px) {
-    height: 32px;
+    height: 5vh;
     opacity: 1;
     margin-top: 0;
   }

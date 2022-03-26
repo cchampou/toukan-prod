@@ -14,12 +14,14 @@ import {
   VideoBandsContainer,
 } from './styles';
 import VideoBand from '../../atoms/videoBand/VideoBand';
+import Debug from '../../atoms/debug/Debug';
 
 function Homepage() {
   const { isScrolled } = useTopNavVisibility();
 
   return (
     <>
+      <Debug />
       <video id="homepage-video" loop muted autoPlay>
         <source
           src={`https://toukan-production.s3.eu-west-3.amazonaws.com/toukan.webm#t=${Math.ceil(

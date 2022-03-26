@@ -7,7 +7,7 @@ function useTopNavVisibility() {
   const { pathname } = useLocation();
 
   const handleScroll = useCallback(() => {
-    if (window.scrollY > 0) {
+    if (window.scrollY > 10) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
