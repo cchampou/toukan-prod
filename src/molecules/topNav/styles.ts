@@ -30,3 +30,18 @@ export const RightSection = styled('div')`
     display: none;
   }
 `;
+
+export const MobileSection = styled('div')`
+  display: none;
+  line-height: 5vh;
+  justify-content: flex-end;
+
+  svg {
+    height: calc(100% - 8px);
+    padding: 4px 8px;
+  }
+
+  ${mobileOnly} {
+    display: flex;
+  }
+`;

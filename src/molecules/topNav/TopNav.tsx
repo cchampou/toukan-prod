@@ -1,12 +1,18 @@
 import React, { useContext } from 'react';
-import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBars,
+  faEnvelope,
+  faMoon,
+  faSun,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useNavigate } from 'react-router-dom';
 import logoBlack from '../../assets/logo-black.png';
 import logoWhite from '../../assets/logo-white.png';
 import './styles.css';
 import useGoToHomepage from '../../hooks/useGoToHomepage';
 import useTopNavVisibility from '../../hooks/useTopNavVisibility';
-import { Nav, RightSection } from './styles';
+import { MobileSection, Nav, RightSection } from './styles';
 import darkContext from '../../contexts/dark';
 import DarkModeSwitch from '../../atoms/darkModeSwitch/DarkModeSwitch';
 import CallToAction from '../../atoms/callToAction/CallToAction';
@@ -14,6 +20,7 @@ import { NavItem } from '../../atoms/navItem/styles';
 
 function TopNav() {
   const goToHomepage = useGoToHomepage();
+  const navigate = useNavigate();
   const { isMouseTop, isScrolled } = useTopNavVisibility();
   const { toggleDark, isDark } = useContext(darkContext);
 
@@ -40,6 +47,14 @@ function TopNav() {
         </DarkModeSwitch>
         <CallToAction to="/contact">CONTACT</CallToAction>
       </RightSection>
+      <MobileSection>
+        <FontAwesomeIcon
+          icon={faEnvelope}
+          onClick={() => navigate('/contact')}
+          cursor="pointer"
+        />
+        <FontAwesomeIcon icon={faBars} />
+      </MobileSection>
     </Nav>
   );
 }
