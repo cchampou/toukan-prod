@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { mobileOnly } from '../../styles/theme';
 
 export const ContentContainer = styled('div')`
   width: 100%;
@@ -12,7 +13,7 @@ export const ContentContainer = styled('div')`
 export const PresentationContainer = styled('section')`
   padding: 32px 10%;
 
-  @media (max-width: 800px) {
+  ${mobileOnly} {
     padding: 32px 5%;
   }
 `;
@@ -27,7 +28,7 @@ export const PresentationFlex = styled('div')`
     height: 400px;
   }
 
-  @media (max-width: 800px) {
+  ${mobileOnly} {
     flex-direction: column;
     margin-bottom: 64px;
 
@@ -44,7 +45,7 @@ export const PresentationParagraph = styled('p')`
   margin-bottom: 96px;
   font-family: ${({ theme }) => theme.fonts.text};
 
-  @media (max-width: 800px) {
+  ${mobileOnly} {
     margin-bottom: 32px;
     width: 100%;
     text-align: justify;
@@ -56,7 +57,7 @@ export const GraySection = styled('div')`
   padding: 144px 0;
   transition: background 0.5s ease-in-out;
 
-  @media (max-width: 800px) {
+  ${mobileOnly} {
     padding: 0;
   }
 `;
@@ -67,7 +68,7 @@ export const VideoBandsContainer = styled('div')`
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
   padding-right: 0;
 
-  @media (max-width: 800px) {
+  ${mobileOnly} {
     width: 100%;
   }
 `;

@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { mobileOnly } from '../../styles/theme';
 
 type Props = {
   show: boolean;
@@ -24,7 +25,7 @@ export const SocialContainer = styled('div')<Props>`
     text-align: center;
   }
 
-  @media (max-width: 600px) {
+  ${mobileOnly} {
     font-size: 16px;
     display: none;
 

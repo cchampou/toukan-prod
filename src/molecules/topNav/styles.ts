@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { mobileOnly } from '../../styles/theme';
 
 export const Nav = styled('nav')`
   background-color: ${({ theme }) => theme.colors.light};
@@ -12,7 +13,7 @@ export const Nav = styled('nav')`
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 600px) {
+  ${mobileOnly} {
     height: 5vh;
     position: relative;
     opacity: 1;
@@ -25,7 +26,7 @@ export const RightSection = styled('div')`
   align-items: center;
   margin-right: -32px;
 
-  @media (max-width: 600px) {
+  ${mobileOnly} {
     display: none;
   }
 `;
