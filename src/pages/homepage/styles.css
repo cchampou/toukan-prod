@@ -22,7 +22,7 @@
 
 @media (max-width: 800px) {
   #homepage-video {
-    height: calc(100vh - 5vh);
+    height: calc(95vh - 32px);
   }
 }
 
