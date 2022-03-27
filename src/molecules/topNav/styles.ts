@@ -14,6 +14,7 @@ export const Nav = styled('nav')`
 
   @media (max-width: 600px) {
     height: 5vh;
+    position: relative;
     opacity: 1;
     margin-top: 0;
   }

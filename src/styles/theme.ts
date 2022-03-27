@@ -25,3 +25,7 @@ export const darkTheme: Theme = {
     darkLight: lightTheme.colors.lightDark,
   },
 };
+
+export const mobileOnly = `
+  @media (max-width: 800px)
+`;

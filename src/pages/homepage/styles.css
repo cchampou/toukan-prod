@@ -20,10 +20,9 @@
   animation: fadein 2s ease-in-out;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #homepage-video {
-    height: calc(100vh - 64px);
-    margin-top: 64px;
+    height: calc(100vh - 5vh);
   }
 }
 
