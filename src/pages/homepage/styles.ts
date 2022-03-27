@@ -7,7 +7,7 @@ export const ContentContainer = styled('div')`
   color: ${({ theme }) => theme.colors.dark};
   transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: calc(95vh - 32px);
 `;
 
 export const PresentationContainer = styled('section')`
