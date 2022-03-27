@@ -10,6 +10,8 @@ import {
   GraySection,
   PresentationContainer,
   PresentationFlex,
+  PresentationImage,
+  PresentationImageWrapper,
   PresentationParagraph,
   VideoBandsContainer,
 } from './styles';
@@ -60,7 +62,9 @@ function Homepage() {
               <strong>illustration</strong>, mais également un suivi
               personnalisé durant toute la partie de développement du projet.
             </PresentationParagraph>
-            <img src={monitor} alt="Moi, moniteur" />
+            <PresentationImageWrapper>
+              <PresentationImage src={monitor} alt="Moi, moniteur" />
+            </PresentationImageWrapper>
           </PresentationFlex>
         </PresentationContainer>
         <GraySection>

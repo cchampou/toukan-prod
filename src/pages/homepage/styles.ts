@@ -23,32 +23,35 @@ export const PresentationFlex = styled('div')`
   align-items: flex-end;
   margin-bottom: 96px;
 
-  img {
-    margin-left: 64px;
-    height: 400px;
-  }
-
   ${mobileOnly} {
     flex-direction: column;
     margin-bottom: 64px;
-
-    img {
-      margin: auto;
-      width: 100%;
-      height: auto;
-    }
   }
 `;
 
 export const PresentationParagraph = styled('p')`
-  width: 40vw;
-  margin-bottom: 96px;
+  flex: 1;
+  width: 40%;
   font-family: ${({ theme }) => theme.fonts.text};
 
   ${mobileOnly} {
     margin-bottom: 32px;
     width: 100%;
     text-align: justify;
+  }
+`;
+
+export const PresentationImage = styled('img')`
+  max-height: 100%;
+  max-width: 100%;
+`;
+
+export const PresentationImageWrapper = styled('div')`
+  flex: 1;
+  margin-left: 32px;
+
+  ${mobileOnly} {
+    margin: 0;
   }
 `;
 
