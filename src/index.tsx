@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
+import { registerSW } from 'virtual:pwa-register';
 
 import './styles/application.css';
 import './styles/fonts.css';
@@ -36,3 +37,5 @@ function Application() {
 }
 
 render(<Application />, document.getElementById('root'));
+
+registerSW({});
