@@ -38,10 +38,10 @@ function TopNav() {
         onClick={goToHomepage}
       />
       <RightSection>
-        <NavItem to="/portfolio">Profil</NavItem>
+        <NavItem to="/profile">Profil</NavItem>
         <NavItem to="/portfolio">Portfolio</NavItem>
-        <NavItem to="/portfolio">Location</NavItem>
-        <NavItem to="/portfolio">Actualité</NavItem>
+        <NavItem to="/rental">Location</NavItem>
+        <NavItem to="/news">Actualité</NavItem>
         <DarkModeSwitch onClick={toggleDark}>
           <FontAwesomeIcon icon={isDark ? faSun : faMoon} />
         </DarkModeSwitch>

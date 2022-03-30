@@ -6,8 +6,14 @@ export const ContentContainer = styled('div')`
   background-color: ${({ theme }) => theme.colors.light};
   color: ${({ theme }) => theme.colors.dark};
   transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
-  margin: 0 auto;
-  min-height: calc(95vh - 32px);
+  margin: 96px auto 0;
+  min-height: calc(100vh - 96px);
+
+  ${mobileOnly} {
+    margin: 0 auto;
+    padding: 8px;
+    min-height: calc(95vh - 48px);
+  }
 `;
 
 export const PresentationContainer = styled('section')`
