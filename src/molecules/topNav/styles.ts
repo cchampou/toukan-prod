@@ -13,7 +13,8 @@ export const Nav = styled('nav')`
   width: 90%;
   height: ${TOP_NAV_HEIGHT};
   z-index: 2;
-  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out,
+    opacity 0.5s ease-in-out, margin-top 0.5s ease-in-out;
 
   padding: ${TOP_NAV_V_PADDING} 5%;
   display: flex;
