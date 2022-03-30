@@ -1,8 +1,10 @@
 import React from 'react';
 import { ContentContainer } from '../homepage/styles';
 import r4d from '../../assets/images/thumbnails/r4d_colo.jpg';
-import confluence from '../../assets/images/thumbnails/conflu.png';
+import confluence from '../../assets/images/thumbnails/conflu.jpg';
 import dji from '../../assets/images/thumbnails/dji_insta.jpg';
+import ronin from '../../assets/images/thumbnails/ronin.jpg';
+import valmy from '../../assets/images/thumbnails/valmy.jpg';
 import './style.css';
 
 const images = [
@@ -17,6 +19,14 @@ const images = [
   {
     url: dji,
     size: 'tall',
+  },
+  {
+    url: ronin,
+    size: '',
+  },
+  {
+    url: valmy,
+    size: 'wide',
   },
 ];
 
