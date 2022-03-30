@@ -8,11 +8,14 @@ import useTopNavVisibility from '../../hooks/useTopNavVisibility';
 import {
   ContentContainer,
   GraySection,
+  HomepageLogo,
+  HomepageVideo,
   PresentationContainer,
   PresentationFlex,
   PresentationImage,
   PresentationImageWrapper,
   PresentationParagraph,
+  ScrollCTAContainer,
   VideoBandsContainer,
 } from './styles';
 import VideoBand from '../../atoms/videoBand/VideoBand';
@@ -24,26 +27,19 @@ function Homepage() {
   return (
     <>
       <Debug />
-      <video id="homepage-video" loop muted autoPlay>
+      <HomepageVideo loop muted autoPlay>
         <source
           src={`https://toukan-production.s3.eu-west-3.amazonaws.com/toukan.webm#t=${Math.ceil(
             232 * Math.random()
           )}`}
           type="video/webm"
         />
-      </video>
-      <img
-        src={logoWhite}
-        alt="Toukan Cinema"
-        id="homepage-logo"
-        className={`homepage-logo-default ${
-          isScrolled ? 'homepage-logo-hide' : ''
-        }`}
-      />
-      <div id="scroll-cta-container">
+      </HomepageVideo>
+      <HomepageLogo src={logoWhite} alt="Toukan Cinema" hide={isScrolled} />
+      <ScrollCTAContainer>
         <Scroll />
-      </div>
-      <ContentContainer>
+      </ScrollCTAContainer>
+      <ContentContainer style={{ marginTop: 0 }}>
         <PresentationContainer>
           <h2>PRÉSENTATION</h2>
           <PresentationFlex>

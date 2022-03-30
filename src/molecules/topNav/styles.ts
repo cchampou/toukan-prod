@@ -1,20 +1,25 @@
 import styled from '@emotion/styled';
 import { mobileOnly } from '../../styles/theme';
+import {
+  TOP_NAV_HEIGHT,
+  TOP_NAV_MOBILE_HEIGHT,
+  TOP_NAV_V_PADDING,
+} from './constants';
 
 export const Nav = styled('nav')`
   background-color: ${({ theme }) => theme.colors.light};
   position: fixed;
   top: 0;
   width: 90%;
-  height: 64px;
+  height: ${TOP_NAV_HEIGHT};
   z-index: 2;
   transition: all 0.5s ease-in-out;
-  padding: 16px 5%;
+  padding: ${TOP_NAV_V_PADDING} 5%;
   display: flex;
   justify-content: space-between;
 
   ${mobileOnly} {
-    height: 5vh;
+    height: ${TOP_NAV_MOBILE_HEIGHT};
     position: relative;
     opacity: 1;
     margin-top: 0;
