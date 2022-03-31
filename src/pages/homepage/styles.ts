@@ -16,6 +16,7 @@ export const ContentContainer = styled('div')`
   ${mobileOnly} {
     margin: 0 auto;
     padding: 8px;
+    width: calc(100% - 16px);
     min-height: calc(
       100vh - ${TOP_NAV_MOBILE_HEIGHT} - (${TOP_NAV_V_PADDING} * 2) - 16px
     );

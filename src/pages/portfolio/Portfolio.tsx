@@ -9,10 +9,9 @@ import ronin from '../../assets/images/thumbnails/ronin.jpg';
 import valmy from '../../assets/images/thumbnails/valmy.jpg';
 import fourAxis from '../../assets/images/thumbnails/4axis.jpg';
 import baston from '../../assets/images/thumbnails/baston.jpg';
-import ultimae from '../../assets/images/thumbnails/ultimae.jpg';
+import ultimae from '../../assets/images/thumbnails/ultimae.webp';
 import r4dMonitor from '../../assets/images/thumbnails/r4d_monitor.jpg';
-import './style.css';
-import { ClickableThumbnail } from './styles';
+import { Backdrop, Cinema, ClickableThumbnail, GridWrapper } from './styles';
 
 const images = [
   {
@@ -77,9 +76,9 @@ function Portfolio() {
 
   return (
     <ContentContainer>
-      {youtube && <div id="backdrop" />}
+      {youtube && <Backdrop />}
       {youtube && (
-        <div id="cinema" ref={ref}>
+        <Cinema ref={ref}>
           <iframe
             src={`https://www.youtube.com/embed/${youtube}`}
             title="YouTube video player"
@@ -87,19 +86,20 @@ function Portfolio() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
-        </div>
+        </Cinema>
       )}
-      <div className="grid-wrapper">
+      <GridWrapper>
         {images.map(({ url, size, alt, youtubeId }) => (
           <ClickableThumbnail
             role="button"
             className={size}
             onClick={() => setYoutube(youtubeId)}
+            key={alt}
           >
             <img src={url} alt={alt} />
           </ClickableThumbnail>
         ))}
-      </div>
+      </GridWrapper>
     </ContentContainer>
   );
 }
