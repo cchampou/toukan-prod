@@ -43,12 +43,12 @@ function Homepage() {
           <h2>PRÉSENTATION</h2>
           <PresentationFlex>
             <PresentationParagraph>
-              Toukan est une boite de production audiovisuelle spéacialisée dans
+              Toukan est une boîte de production audiovisuelle spécialisée dans
               la <strong>mise en scène</strong>, la{' '}
               <strong>colorimétrie</strong> et le <strong>télépilotage</strong>{' '}
               de drone. Nous vous proposons un vaste choix de prestations afin
-              de doner vie à vos idées et vos projets par le biais d’une vidéos
-              qui répondra parfaitement à vos attentes et éxigences
+              de donner vie à vos idées et vos projets par le biais d’une vidéo
+              qui répondra parfaitement à vos attentes et exigences
               <br />
               <br />
               Je propose à mes clients, mon expertise et ma créativité dans le
