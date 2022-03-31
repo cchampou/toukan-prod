@@ -10,7 +10,7 @@ function TextArea({ label, id, children, ...rest }: Props) {
     <Label htmlFor={id}>
       {label}
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-      <StyledTextArea id={id} {...rest}>
+      <StyledTextArea id={id} rows={10} {...rest}>
         {children}
       </StyledTextArea>
     </Label>
