@@ -3,6 +3,9 @@ import styled from '@emotion/styled';
 export const VideoBandContainer = styled('button')`
   position: relative;
   cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
 `;
 
 export const Text = styled('h2')`
