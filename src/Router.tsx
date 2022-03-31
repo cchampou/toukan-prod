@@ -10,6 +10,7 @@ import Portfolio from './pages/portfolio/Portfolio';
 import PortfolioVideo from './pages/portfolio/PortfolioVideo';
 import PortfolioPhoto from './pages/portfolio/PortfolioPhoto';
 import PortfolioIllustration from './pages/portfolio/PortfolioIllustration';
+import Contact from './pages/contact/Contact';
 
 const ScrollManager = ({ children }: PropsWithChildren<any>) => {
   const { pathname } = useLocation();
@@ -31,6 +32,7 @@ function Router() {
           <Route path="/" element={<Homepage />} />
           <Route path="/clip" element={<Clip />} />
           <Route path="/drone" element={<Drone />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio/videos" element={<PortfolioVideo />} />
           <Route path="/portfolio/photos" element={<PortfolioPhoto />} />
           <Route
