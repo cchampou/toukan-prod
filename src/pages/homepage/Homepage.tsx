@@ -58,7 +58,12 @@ function Homepage() {
               personnalisé durant toute la partie de développement du projet.
             </PresentationParagraph>
             <PresentationImageWrapper>
-              <PresentationImage src={monitor} alt="Moi, moniteur" />
+              <PresentationImage
+                src={monitor}
+                alt="Moi, moniteur"
+                height="100%"
+                width="auto"
+              />
             </PresentationImageWrapper>
           </PresentationFlex>
         </PresentationContainer>

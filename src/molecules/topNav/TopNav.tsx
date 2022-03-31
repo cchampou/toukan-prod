@@ -35,6 +35,7 @@ function TopNav() {
           src={isDark ? logoWhite : logoBlack}
           alt="Toukan Production logo"
           height="100%"
+          width="auto"
         />
       </Logo>
       <RightSection>
