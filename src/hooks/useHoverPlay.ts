@@ -2,7 +2,7 @@ import { useLayoutEffect, useRef } from 'react';
 
 function useHoverPlay() {
   const playerRef = useRef<HTMLVideoElement>(null);
-  const domElement = useRef<HTMLDivElement>(null);
+  const domElement = useRef<HTMLButtonElement>(null);
 
   const play = () => {
     if (playerRef.current) playerRef.current.play();
