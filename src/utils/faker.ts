@@ -1,5 +1,5 @@
-const imagesFaker = async (number: number) => {
-  const images = await Promise.all(
+export const imagesFaker = async (number: number) =>
+  Promise.all(
     Array(number)
       .fill(0)
       .map(async () => {
@@ -7,5 +7,3 @@ const imagesFaker = async (number: number) => {
         return url;
       })
   );
-  return images;
-};
