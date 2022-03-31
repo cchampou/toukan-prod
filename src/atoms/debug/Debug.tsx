@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import React, { useCallback, useEffect, useState } from 'react';
-import { useParams, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 
 const Overlay = styled('p')`
   background-color: black;
