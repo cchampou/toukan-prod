@@ -1,9 +1,8 @@
 import React from 'react';
 import Input from '../../atoms/inputs/Input';
 import { ContentContainer } from '../homepage/styles';
-import { Columns, Form, Information } from './styles';
+import { Columns, Form, Information, SendButton } from './styles';
 import TextArea from '../../atoms/inputs/TextArea';
-import { Button } from '../../atoms/callToAction/styles';
 
 function Contact() {
   return (
@@ -19,7 +18,7 @@ function Contact() {
           <Input inputMode="tel" label="Numéro de téléphone" />
           <Input inputMode="text" label="Sujet" />
           <TextArea label="Message *" placeholder="Décrivez votre projet..." />
-          <Button type="submit">Envoyer</Button>
+          <SendButton type="submit">Envoyer</SendButton>
         </Form>
       </Columns>
     </ContentContainer>
