@@ -61,8 +61,8 @@ function Homepage() {
               <PresentationImage
                 src={monitor}
                 alt="Moi, moniteur"
-                height="100%"
-                width="auto"
+                height="auto"
+                width="100%"
               />
             </PresentationImageWrapper>
           </PresentationFlex>
