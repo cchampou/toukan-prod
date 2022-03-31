@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { mobileOnly } from '../../styles/theme';
+import { ContentContainer } from '../homepage/styles';
 
 export const ClickableThumbnail = styled('button')`
   background-color: transparent;
@@ -92,5 +93,24 @@ export const Cinema = styled('div')`
     width: 100%;
     height: 100%;
     border: none;
+  }
+`;
+
+export const MainPageWrapper = styled(ContentContainer)`
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: ${({ theme }) => theme.fonts.primary};
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    display: flex;
+    text-align: center;
+    margin: 2.5rem;
+    font-size: 2.5rem;
   }
 `;

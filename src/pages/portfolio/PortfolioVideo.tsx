@@ -8,7 +8,7 @@ import fourAxis from '../../assets/images/thumbnails/4axis.jpg';
 import baston from '../../assets/images/thumbnails/baston.jpg';
 import ultimae from '../../assets/images/thumbnails/ultimae.webp';
 import r4dMonitor from '../../assets/images/thumbnails/r4d_monitor.jpg';
-import Portfolio from './Portfolio';
+import PortfolioTemplate from './PortfolioTemplate';
 import { Entry } from './types';
 
 const images: Entry[] = [
@@ -68,7 +68,7 @@ const images: Entry[] = [
 ];
 
 function PortfolioVideo() {
-  return <Portfolio images={images} />;
+  return <PortfolioTemplate images={images} />;
 }
 
 export default PortfolioVideo;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Portfolio from './Portfolio';
+import PortfolioTemplate from './PortfolioTemplate';
 import { Entry } from './types';
 import stairs from '../../assets/images/photos/stairs.webp';
 import party from '../../assets/images/photos/party.webp';
@@ -66,7 +66,7 @@ const images: Entry[] = [
 ];
 
 function PortfolioPhoto() {
-  return <Portfolio images={images} />;
+  return <PortfolioTemplate images={images} />;
 }
 
 export default PortfolioPhoto;

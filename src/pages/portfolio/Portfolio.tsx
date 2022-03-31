@@ -1,48 +1,16 @@
-import React, { useState } from 'react';
-import { useKeyPress } from 'react-alt';
-import { useClickOutside } from '@mantine/hooks';
-import { ContentContainer } from '../homepage/styles';
-import { Backdrop, Cinema, ClickableThumbnail, GridWrapper } from './styles';
-import { Entry } from './types';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { MainPageWrapper } from './styles';
 
-type Props = {
-  images: Entry[];
-};
-
-function Portfolio({ images }: Props) {
-  const [youtube, setYoutube] = useState<string>();
-
-  useKeyPress(() => setYoutube(undefined), 'Escape');
-
-  const ref = useClickOutside(() => setYoutube(undefined));
-
+function Portfolio() {
   return (
-    <ContentContainer>
-      {youtube && <Backdrop />}
-      {youtube && (
-        <Cinema ref={ref}>
-          <iframe
-            src={`https://www.youtube.com/embed/${youtube}`}
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </Cinema>
-      )}
-      <GridWrapper>
-        {images.map(({ url, size, alt, youtubeId }) => (
-          <ClickableThumbnail
-            role="button"
-            className={size}
-            onClick={() => setYoutube(youtubeId)}
-            key={alt}
-          >
-            <img src={url} alt={alt} />
-          </ClickableThumbnail>
-        ))}
-      </GridWrapper>
-    </ContentContainer>
+    <MainPageWrapper>
+      <div>
+        <NavLink to="/portfolio/videos">Videos</NavLink>
+        <br />
+        <NavLink to="/portfolio/photos">Photos</NavLink>
+      </div>
+    </MainPageWrapper>
   );
 }
 
