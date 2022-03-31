@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logoWhite from '../../assets/logo-white.png';
+import logoWhite from '../../assets/logo-white.webp';
 import monitor from '../../assets/images/monitor.jpg';
 import Scroll from '../../atoms/scroll/Scroll';
 import useTopNavVisibility from '../../hooks/useTopNavVisibility';

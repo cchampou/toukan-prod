@@ -7,8 +7,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useNavigate } from 'react-router-dom';
-import logoBlack from '../../assets/logo-black.png';
-import logoWhite from '../../assets/logo-white.png';
+import logoBlack from '../../assets/logo-black.webp';
+import logoWhite from '../../assets/logo-white.webp';
 import './styles.css';
 import useGoToHomepage from '../../hooks/useGoToHomepage';
 import useTopNavVisibility from '../../hooks/useTopNavVisibility';
