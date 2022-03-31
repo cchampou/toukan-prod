@@ -6,10 +6,9 @@ import NotFound from './pages/notFound/NotFound';
 import Socials from './molecules/socials/Socials';
 import Clip from './pages/clip/Clip';
 import Drone from './pages/drone/Drone';
-import PortfolioTemplate from './pages/portfolio/Portfolio';
+import Portfolio from './pages/portfolio/Portfolio';
 import PortfolioVideo from './pages/portfolio/PortfolioVideo';
 import PortfolioPhoto from './pages/portfolio/PortfolioPhoto';
-import Portfolio from './pages/portfolio/Portfolio';
 
 const ScrollManager = ({ children }: PropsWithChildren<any>) => {
   const { pathname } = useLocation();
