@@ -7,9 +7,10 @@ import { Entry } from './types';
 
 type Props = {
   images: Entry[];
+  square?: boolean;
 };
 
-function PortfolioTemplate({ images }: Props) {
+function PortfolioTemplate({ images, square }: Props) {
   const [youtube, setYoutube] = useState<string>();
 
   useKeyPress(() => setYoutube(undefined), 'Escape');
@@ -30,7 +31,7 @@ function PortfolioTemplate({ images }: Props) {
           />
         </Cinema>
       )}
-      <GridWrapper>
+      <GridWrapper square={square}>
         {images.map(({ url, size, alt, youtubeId }) => (
           <ClickableThumbnail
             role="button"

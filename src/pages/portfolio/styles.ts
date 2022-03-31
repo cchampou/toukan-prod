@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { css } from '@emotion/react';
 import { mobileOnly } from '../../styles/theme';
 import { ContentContainer } from '../homepage/styles';
 
@@ -24,15 +25,26 @@ export const ClickableThumbnail = styled('button')`
   }
 `;
 
-export const GridWrapper = styled('div')`
+const squareStyle = css`
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-auto-rows: 250px;
+`;
+
+type GridWrapperProps = {
+  square?: boolean;
+};
+
+export const GridWrapper = styled('div')<GridWrapperProps>`
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-rows: 200px;
+  ${({ square }) => (square ? squareStyle : '')}
   grid-auto-flow: dense;
   width: 80%;
   margin: auto;
   padding-bottom: 16px;
+  justify-content: center;
 
   ${mobileOnly} {
     width: 90%;
