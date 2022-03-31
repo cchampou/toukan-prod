@@ -8,6 +8,7 @@ import {
 
 export const Nav = styled('nav')`
   background-color: ${({ theme }) => theme.colors.light};
+  color: ${({ theme }) => theme.colors.dark};
   position: fixed;
   top: 0;
   width: 90%;
