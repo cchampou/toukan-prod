@@ -1,22 +1,12 @@
-import { faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { Container, Play } from './styles';
+import React, { useEffect, useRef } from 'react';
+import { Container } from './styles';
 
-function Video({ type, src, poster }) {
+type Props = Pick<HTMLSourceElement, 'type'> &
+  Pick<HTMLSourceElement, 'src'> &
+  Pick<HTMLVideoElement, 'poster'>;
+
+function Video({ type, src, poster }: Props) {
   const playerRef = useRef<HTMLVideoElement>(null);
-  const [playing, setPlaying] = useState(false);
-
-  const togglePlayPause = useCallback(() => {
-    if (!playerRef.current) return;
-    if (playerRef.current.paused) {
-      playerRef.current.play().then(() => null);
-      setPlaying(true);
-    } else {
-      playerRef.current.pause();
-      setPlaying(false);
-    }
-  }, [playerRef, setPlaying]);
 
   useEffect(() => {
     if (playerRef.current) playerRef.current.volume = 0.5;
@@ -24,9 +14,7 @@ function Video({ type, src, poster }) {
 
   return (
     <Container>
-      {/* <Play onClick={togglePlayPause}> */}
-      {/*  <FontAwesomeIcon icon={playing ? faPause : faPlay} /> */}
-      {/* </Play> */}
+      {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
       <video ref={playerRef} controls poster={poster} controlsList="nodownload">
         <source type={type} src={src} />
       </video>
