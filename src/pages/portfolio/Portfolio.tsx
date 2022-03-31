@@ -69,13 +69,14 @@ const images = [
   },
 ];
 
-function Portfolio() {
+function PortfolioVideo() {
   const [youtube, setYoutube] = useState<string>();
   useKeyPress(() => setYoutube(undefined), 'Escape');
   const ref = useClickOutside(() => setYoutube(undefined));
 
   return (
     <ContentContainer>
+      {/* <h2 style={{ textAlign: 'left' }}>Portfolio video</h2> */}
       {youtube && <div id="backdrop" />}
       {youtube && (
         <div id="cinema" ref={ref}>
@@ -96,6 +97,78 @@ function Portfolio() {
         ))}
       </div>
     </ContentContainer>
+  );
+}
+
+function PortfolioPhoto() {
+  const [youtube, setYoutube] = useState<string>();
+  useKeyPress(() => setYoutube(undefined), 'Escape');
+  const ref = useClickOutside(() => setYoutube(undefined));
+
+  return (
+    <ContentContainer>
+      {/* <h2 style={{ textAlign: 'center' }}>Portfolio Photo</h2> */}
+      <img
+        src="https://yt3.ggpht.com/ytc/AKedOLRnH7vrp6HiL5GbPRkDk05HBGZWFnIJrb40e2MjZw=s900-c-k-c0x00ffffff-no-rj"
+        alt="Teletubbies"
+        width="100%"
+      />
+    </ContentContainer>
+  );
+}
+
+function PortfolioIllustration() {
+  const [youtube, setYoutube] = useState<string>();
+  useKeyPress(() => setYoutube(undefined), 'Escape');
+  const ref = useClickOutside(() => setYoutube(undefined));
+
+  return (
+    <ContentContainer>
+      {/* <h2 style={{ textAlign: 'right' }}>Portfolio Illustration</h2> */}
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/7/79/Les_simpson_logo_France.png"
+        alt="Les Simpson"
+        width="100%"
+      />
+    </ContentContainer>
+  );
+}
+
+const getClass = (index: number, position: string, state?: number) => {
+  // if (typeof state === 'undefined') return '';
+  switch (state) {
+    case index:
+      return `lobby-open-${position}`;
+    default:
+      return `lobby-closed-${position}`;
+  }
+};
+
+function Portfolio() {
+  const [open, setOpen] = useState<number>();
+
+  const handleClick = (index: number) => () => {
+    setOpen((prev) => (prev === index ? undefined : index));
+  };
+
+  return (
+    <div className="lobby">
+      <div className={getClass(1, 'left', open)} onClick={handleClick(1)}>
+        <div style={{ width: '100%' }}>
+          <PortfolioVideo />
+        </div>
+      </div>
+      <div className={getClass(2, 'center', open)} onClick={handleClick(2)}>
+        <div style={{ width: '100vw' }}>
+          <PortfolioPhoto />
+        </div>
+      </div>
+      <div className={getClass(3, 'right', open)} onClick={handleClick(3)}>
+        <div style={{ width: '100vw' }}>
+          <PortfolioIllustration />
+        </div>
+      </div>
+    </div>
   );
 }
 

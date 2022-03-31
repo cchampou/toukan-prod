@@ -64,3 +64,129 @@
   height: 100%;
   border: none;
 }
+
+.lobby {
+  display: flex;
+  padding-top: 0;
+  width: 100%;
+}
+
+.lobby h2 {
+  color: white;
+  white-space: nowrap;
+}
+
+.lobby > div {
+  position: absolute;
+  height: 100%;
+  transition: all 0.25s ease-in-out;
+  left: 0;
+  top: 0;
+}
+
+@keyframes open-left {
+  0% {
+    clip-path: polygon(0 0, 40% 0, 40% 100%, 0 100%);
+    z-index: 3;
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 3;
+  }
+}
+
+.lobby-open-left {
+  animation: open-left 0.25s ease-in-out;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 4 !important;
+}
+
+@keyframes open-center {
+  0% {
+    clip-path: polygon(33% 0, 66% 0, 66% 100%, 33% 100%);
+    z-index: 3;
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 3;
+  }
+}
+
+.lobby-open-center {
+  animation: open-center 0.25s ease-in-out;
+  z-index: 3;
+}
+
+@keyframes open-right {
+  0% {
+    clip-path: polygon(66% 0, 100% 0, 100% 100%, 66% 100%);
+    z-index: 3;
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 3;
+  }
+}
+
+.lobby-open-right {
+  animation: open-right 0.25s ease-in-out;
+  z-index: 3;
+}
+
+@keyframes close-left {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 4 !important;
+  }
+
+  100% {
+    clip-path: polygon(0 0, 43% 0, 43% 100%, 0 100%);
+    z-index: 4 !important;
+  }
+}
+
+.lobby-closed-left {
+  animation: close-left 0.25s ease-in-out;
+  clip-path: polygon(0 0, 43% 0, 43% 100%, 0 100%);
+  z-index: 0 !important;
+  left: -10% !important;
+}
+
+@keyframes close-center {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 4 !important;
+  }
+
+  100% {
+    clip-path: polygon(33% 0, 66% 0, 66% 100%, 33% 100%);
+    z-index: 4 !important;
+  }
+}
+
+.lobby-closed-center {
+  animation: close-center 0.25s ease-in-out;
+  clip-path: polygon(33% 0, 66% 0, 66% 100%, 33% 100%);
+  z-index: 0 !important;
+}
+
+@keyframes close-right {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 3 !important;
+  }
+
+  100% {
+    clip-path: polygon(66% 0, 100% 0, 100% 100%, 66% 100%);
+    z-index: 1 !important;
+  }
+}
+
+.lobby-closed-right {
+  animation: close-right 0.25s ease-in-out;
+  clip-path: polygon(66% 0, 100% 0, 100% 100%, 66% 100%);
+  z-index: 0 !important;
+}
