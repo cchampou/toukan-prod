@@ -7,6 +7,8 @@ import Socials from './molecules/socials/Socials';
 import Clip from './pages/clip/Clip';
 import Drone from './pages/drone/Drone';
 import Portfolio from './pages/portfolio/Portfolio';
+import PortfolioVideo from './pages/portfolio/PortfolioVideo';
+import PortfolioPhoto from './pages/portfolio/PortfolioPhoto';
 
 const ScrollManager = ({ children }: PropsWithChildren<any>) => {
   const { pathname } = useLocation();
@@ -28,7 +30,8 @@ function Router() {
           <Route path="/" element={<Homepage />} />
           <Route path="/clip" element={<Clip />} />
           <Route path="/drone" element={<Drone />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/video" element={<PortfolioVideo />} />
+          <Route path="/portfolio/photo" element={<PortfolioPhoto />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </ScrollManager>
