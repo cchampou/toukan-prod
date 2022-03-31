@@ -3,6 +3,7 @@
     "esModuleInterop": true,
     "jsx": "react-jsx",
     "strictNullChecks": true,
-    "strict": true
+    "strict": true,
+    "noEmit": true
   }
 }
