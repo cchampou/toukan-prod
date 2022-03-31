@@ -52,3 +52,10 @@ export const MobileSection = styled('div')`
     display: flex;
   }
 `;
+
+export const Logo = styled('button')`
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+`;

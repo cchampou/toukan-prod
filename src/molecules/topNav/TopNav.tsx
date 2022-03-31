@@ -12,7 +12,7 @@ import logoWhite from '../../assets/logo-white.png';
 import './styles.css';
 import useGoToHomepage from '../../hooks/useGoToHomepage';
 import useTopNavVisibility from '../../hooks/useTopNavVisibility';
-import { MobileSection, Nav, RightSection } from './styles';
+import { Logo, MobileSection, Nav, RightSection } from './styles';
 import darkContext from '../../contexts/dark';
 import DarkModeSwitch from '../../atoms/darkModeSwitch/DarkModeSwitch';
 import CallToAction from '../../atoms/callToAction/CallToAction';
@@ -30,13 +30,13 @@ function TopNav() {
         isMouseTop || isScrolled ? 'show-top-nav' : ''
       }`}
     >
-      <img
-        src={isDark ? logoWhite : logoBlack}
-        alt="logo"
-        id="top-nav-logo"
-        role="button"
-        onClick={goToHomepage}
-      />
+      <Logo role="button" onClick={goToHomepage}>
+        <img
+          src={isDark ? logoWhite : logoBlack}
+          alt="Toukan Production logo"
+          height="100%"
+        />
+      </Logo>
       <RightSection>
         <NavItem to="/profile">Profil</NavItem>
         <NavItem to="/portfolio">Portfolio</NavItem>
