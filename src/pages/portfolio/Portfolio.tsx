@@ -12,6 +12,7 @@ import baston from '../../assets/images/thumbnails/baston.jpg';
 import ultimae from '../../assets/images/thumbnails/ultimae.jpg';
 import r4dMonitor from '../../assets/images/thumbnails/r4d_monitor.jpg';
 import './style.css';
+import { ClickableThumbnail } from './styles';
 
 const images = [
   {
@@ -90,9 +91,13 @@ function Portfolio() {
       )}
       <div className="grid-wrapper">
         {images.map(({ url, size, alt, youtubeId }) => (
-          <div className={size} onClick={() => setYoutube(youtubeId)}>
+          <ClickableThumbnail
+            role="button"
+            className={size}
+            onClick={() => setYoutube(youtubeId)}
+          >
             <img src={url} alt={alt} />
-          </div>
+          </ClickableThumbnail>
         ))}
       </div>
     </ContentContainer>
