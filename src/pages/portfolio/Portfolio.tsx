@@ -9,6 +9,8 @@ function Portfolio() {
         <NavLink to="/portfolio/videos">Videos</NavLink>
         <br />
         <NavLink to="/portfolio/photos">Photos</NavLink>
+        <br />
+        <NavLink to="/portfolio/creations">Illustrations</NavLink>
       </div>
     </MainPageWrapper>
   );
