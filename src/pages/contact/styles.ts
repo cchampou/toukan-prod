@@ -2,7 +2,14 @@ import styled from '@emotion/styled';
 
 export const Columns = styled('div')`
   width: 80%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   margin: auto;
+  display: flex;
+`;
+
+export const Form = styled('form')`
+  flex: 1;
+`;
+
+export const Information = styled('section')`
+  flex: 1;
 `;
