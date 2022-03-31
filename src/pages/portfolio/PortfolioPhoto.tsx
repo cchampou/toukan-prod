@@ -11,6 +11,13 @@ import profil from '../../assets/images/photos/profil.webp';
 import session from '../../assets/images/photos/session.webp';
 import dj from '../../assets/images/photos/dj.webp';
 import hardware from '../../assets/images/photos/hardware.webp';
+import conflu1 from '../../assets/images/photos/conflu1.webp';
+import conflu2 from '../../assets/images/photos/conflu2.webp';
+import jstn from '../../assets/images/photos/jstn.webp';
+import malongo1 from '../../assets/images/photos/malongo1.webp';
+import malongo2 from '../../assets/images/photos/malongo2.webp';
+import r4dcolo1 from '../../assets/images/photos/r4dcolo1.webp';
+import r4dcolo2 from '../../assets/images/photos/r4dcolo2.webp';
 
 const images: Entry[] = [
   {
@@ -62,6 +69,41 @@ const images: Entry[] = [
     url: hardware,
     alt: 'Hardware',
     size: 'big',
+  },
+  {
+    url: conflu1,
+    alt: 'Confluence 1',
+    size: 'wide',
+  },
+  {
+    url: conflu2,
+    alt: 'Confluence 2',
+    size: 'tall',
+  },
+  {
+    url: malongo1,
+    alt: 'Malongo 1',
+    size: '',
+  },
+  {
+    url: malongo2,
+    alt: 'Malongo 2',
+    size: 'tall',
+  },
+  {
+    url: jstn,
+    alt: 'JSTN',
+    size: 'big',
+  },
+  {
+    url: r4dcolo1,
+    alt: 'R4D COLO 1',
+    size: 'tall',
+  },
+  {
+    url: r4dcolo2,
+    alt: 'R4D COLO 2',
+    size: 'wide',
   },
 ];
 
