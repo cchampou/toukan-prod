@@ -20,7 +20,7 @@ function Clip() {
         </Intro>
       </Band>
       <CaptionedVideo
-        src="https://toukan-production.s3.eu-west-3.amazonaws.com/clip-demo.mp4"
+        src="https://toukan.cdn.cchampou.me/content/clip/clip-demo/manifest.mpd"
         title="Cinématique"
         poster={clipThumbnail}
       >

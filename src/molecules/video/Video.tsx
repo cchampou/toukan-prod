@@ -1,24 +1,35 @@
-import React, { useEffect, useRef } from 'react';
-import { Container } from './styles';
+import React, { useLayoutEffect, useRef } from 'react';
+// @ts-ignore
+import shaka from 'shaka-player/dist/shaka-player.ui.debug';
+import 'shaka-player/dist/controls.css';
+import { UIContainer, VideoPlayer } from './styles';
 
-type Props = Pick<HTMLSourceElement, 'type'> &
-  Pick<HTMLSourceElement, 'src'> &
-  Pick<HTMLVideoElement, 'poster'>;
+type Props = {
+  src: string;
+};
 
-function Video({ type, src, poster }: Props) {
-  const playerRef = useRef<HTMLVideoElement>(null);
+function Video({ src }: Props) {
+  const HTMLPlayerRef = useRef<HTMLVideoElement>(null);
+  const uiContainerRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    if (playerRef.current) playerRef.current.volume = 0.5;
-  }, [playerRef]);
+  useLayoutEffect(() => {
+    const player = new shaka.Player(HTMLPlayerRef.current);
+    const ui = new shaka.ui.Overlay(
+      player,
+      uiContainerRef.current,
+      HTMLPlayerRef.current
+    );
+    const config = {
+      overflowMenuButtons: ['quality'],
+    };
+    ui.configure(config);
+    player.load(src);
+  }, []);
 
   return (
-    <Container>
-      {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
-      <video ref={playerRef} controls poster={poster} controlsList="nodownload">
-        <source type={type} src={src} />
-      </video>
-    </Container>
+    <UIContainer ref={uiContainerRef}>
+      <VideoPlayer ref={HTMLPlayerRef} />
+    </UIContainer>
   );
 }
 

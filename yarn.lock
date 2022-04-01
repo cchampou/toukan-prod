@@ -911,6 +911,11 @@ electron-to-chromium@^1.4.84:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.103.tgz#abfe376a4d70fa1e1b4b353b95df5d6dfd05da3a"
   integrity sha512-c/uKWR1Z/W30Wy/sx3dkZoj4BijbXX85QKWu9jJfjho3LBAXNEGAEW3oWiGb+dotA6C6BzCTxL2/aLes7jlUeg==
 
+eme-encryption-scheme-polyfill@^2.0.3:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/eme-encryption-scheme-polyfill/-/eme-encryption-scheme-polyfill-2.0.4.tgz#7d818302af3f3b19d5974255dcc92dc087413845"
+  integrity sha512-MHYJX1v145Pjj2YJTrVVuJOYyXrxGVy8LWf6kV5M4jrV/GyoeuJKyTuD+GaD+VAiE8Ip+MptiH4dXk6ZVmMNow==
+
 emoji-regex@^9.2.2:
   version "9.2.2"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-9.2.2.tgz#840c8803b0d8047f4ff0cf963176b32d4ef3ed72"
@@ -2163,6 +2168,13 @@ semver@^7.3.5:
   integrity sha512-PoeGJYh8HK4BTO/a9Tf6ZG3veo/A7ZVsYrSA6J8ny9nb3B1VrpkuN+z9OE5wfE5p6H4LchYZsegiQgbJD94ZFQ==
   dependencies:
     lru-cache "^6.0.0"
+
+shaka-player@^3.1.6:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/shaka-player/-/shaka-player-3.1.6.tgz#d8b101e89a8eda546264d11e28c79bab6b1e468f"
+  integrity sha512-67mSVRum8J3AZL7sCuoAR48lfb5+6B2lQXv51QgJe3VaPfW5yOBNoG2oe7ZHooXEZELzXIqjLrmAjOOtXXGc1g==
+  dependencies:
+    eme-encryption-scheme-polyfill "^2.0.3"
 
 shebang-command@^2.0.0:
   version "2.0.0"
