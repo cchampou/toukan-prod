@@ -28,7 +28,7 @@ function Homepage() {
       <Debug />
       <HomepageVideo loop muted autoPlay>
         <source
-          src={`https://toukan-production.s3.eu-west-3.amazonaws.com/toukan.webm#t=${Math.ceil(
+          src={`https://toukan.cdn.cchampou.me/toukan.webm#t=${Math.ceil(
             232 * Math.random()
           )}`}
           type="video/webm"
@@ -70,17 +70,17 @@ function Homepage() {
         <GraySection>
           <VideoBandsContainer>
             <VideoBand
-              videoSource="https://toukan-production.s3.eu-west-3.amazonaws.com/corpo.mp4"
+              videoSource="https://toukan.cdn.cchampou.me/corpo.webm"
               text="Corporate"
               linkTo="/corpo"
             />
             <VideoBand
-              videoSource="https://toukan-production.s3.eu-west-3.amazonaws.com/clip.mp4"
+              videoSource="https://toukan.cdn.cchampou.me/clip.webm"
               text="Clip"
               linkTo="/clip"
             />
             <VideoBand
-              videoSource="https://toukan-production.s3.eu-west-3.amazonaws.com/drone.mp4"
+              videoSource="https://toukan.cdn.cchampou.me/drone.webm"
               text="Drone"
               linkTo="/drone"
             />
