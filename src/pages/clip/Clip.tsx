@@ -30,7 +30,7 @@ function Clip() {
         histoire, une idée ou simplement une direction artistique.
       </CaptionedVideo>
       <CaptionedVideo
-        src="https://toukan-production.s3.eu-west-3.amazonaws.com/live.mp4"
+        src="https://toukan.cdn.cchampou.me/content/clip/live/manifest.mpd"
         title="Live"
         poster={liveThumbnail}
         reverse
@@ -41,7 +41,7 @@ function Clip() {
         parfaite car chaque moment loupé à l’image est irremplaçable.
       </CaptionedVideo>
       <CaptionedVideo
-        src="https://toukan-production.s3.eu-west-3.amazonaws.com/AfterMovie Demo.mp4"
+        src="https://toukan.cdn.cchampou.me/content/clip/aftermovie/manifest.mpd"
         title="Aftermovie"
         poster={afterMovieThumbnail}
       >

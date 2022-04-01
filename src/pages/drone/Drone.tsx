@@ -19,7 +19,7 @@ function Drone() {
         </Intro>
       </Band>
       <CaptionedVideo
-        src="https://toukan-production.s3.eu-west-3.amazonaws.com/Drone Demo.mp4"
+        src="https://toukan.cdn.cchampou.me/content/drone/cinematique/manifest.mpd"
         title="Cinématique"
         poster={droneThumbnail}
       >
@@ -30,7 +30,7 @@ function Drone() {
         ouvertures de vos vidéos.
       </CaptionedVideo>
       <CaptionedVideo
-        src="https://toukan-production.s3.eu-west-3.amazonaws.com/FPV Demo.mp4"
+        src="https://toukan.cdn.cchampou.me/content/drone/fpv/manifest.mpd"
         title="FPV"
         poster={fpvThumbnail}
         reverse
