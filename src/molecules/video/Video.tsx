@@ -20,7 +20,7 @@ function Video({ src }: Props) {
       HTMLPlayerRef.current
     );
     const config = {
-      overflowMenuButtons: ['quality'],
+      overflowMenuButtons: ['quality', 'statistics'],
     };
     ui.configure(config);
     player.load(src);
