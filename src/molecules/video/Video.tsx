@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useRef } from 'react';
 // @ts-ignore
-import shaka from 'shaka-player/dist/shaka-player.ui.debug';
+import shaka from 'shaka-player/dist/shaka-player.ui';
 import 'shaka-player/dist/controls.css';
 import { UIContainer, VideoPlayer } from './styles';
 

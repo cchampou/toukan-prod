@@ -2,6 +2,7 @@ import React from 'react';
 import PortfolioTemplate from './PortfolioTemplate';
 import { Entry } from './types';
 import stairs from '../../assets/images/photos/stairs.webp';
+import stairsFull from '../../assets/images/photos/stairs.jpg';
 import party from '../../assets/images/photos/party.webp';
 import mensonge from '../../assets/images/photos/mensonge.webp';
 import mountains from '../../assets/images/photos/mountains.webp';
@@ -22,6 +23,7 @@ import r4dcolo2 from '../../assets/images/photos/r4dcolo2.webp';
 const images: Entry[] = [
   {
     url: stairs,
+    fullImage: stairsFull,
     alt: 'Portrait',
     size: '',
   },

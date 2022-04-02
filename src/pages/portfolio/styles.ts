@@ -90,15 +90,22 @@ export const Backdrop = styled('div')`
 
 export const Cinema = styled('div')`
   position: fixed;
-  width: 80vw;
-  height: 80vh;
+  width: 100vw;
+  height: 100vh;
   background-color: black;
+  color: white;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   z-index: 10;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  img {
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
 
   iframe {
     margin: 0;

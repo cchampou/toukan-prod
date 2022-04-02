@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import './styles/application.css';
 import './styles/fonts.css';
@@ -35,7 +35,10 @@ function Application() {
   );
 }
 
-render(<Application />, document.getElementById('root'));
+// @ts-ignore
+const root = createRoot(document.getElementById('root'));
+
+root.render(<Application />);
 
 navigator.serviceWorker.getRegistrations().then((registrations) => {
   registrations.forEach((registration) => {

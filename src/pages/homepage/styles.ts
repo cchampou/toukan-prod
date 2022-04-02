@@ -85,7 +85,8 @@ export const VideoBandsContainer = styled('div')`
   padding-right: 0;
 
   ${mobileOnly} {
-    width: 100%;
+    width: calc(100% + 16px);
+    margin: -8px;
   }
 `;
 

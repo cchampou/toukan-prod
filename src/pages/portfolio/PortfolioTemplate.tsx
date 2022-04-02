@@ -1,29 +1,47 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useKeyPress } from 'react-alt';
-import { useClickOutside } from '@mantine/hooks';
+import { useClickOutside, useScrollLock } from '@mantine/hooks';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { ContentContainer } from '../homepage/styles';
-import { Backdrop, Cinema, ClickableThumbnail, GridWrapper } from './styles';
+import { Cinema, ClickableThumbnail, GridWrapper } from './styles';
 import { Entry } from './types';
+import ImageComponent from '../../atoms/image/ImageComponent';
 
 type Props = {
   images: Entry[];
   square?: boolean;
 };
 
+type NavigationState = {
+  youtube?: string;
+  fullImage?: string;
+};
+
 function PortfolioTemplate({ images, square }: Props) {
-  const [youtube, setYoutube] = useState<string>();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const state = location.state as NavigationState;
 
-  useKeyPress(() => setYoutube(undefined), 'Escape');
+  useKeyPress(() => {
+    navigate(-1);
+  }, 'Escape');
 
-  const ref = useClickOutside(() => setYoutube(undefined));
+  const ref = useClickOutside(() => navigate(-1));
+  useScrollLock(!!state);
 
   return (
     <ContentContainer>
-      {youtube && <Backdrop />}
-      {youtube && (
+      {/* Probably unnecessary now */}
+      {/* {state && state.youtube && <Backdrop />} */}
+      {state && state.fullImage && (
+        <Cinema onClick={() => navigate(-1)}>
+          <ImageComponent src={state.fullImage} alt="Stairs full" />
+        </Cinema>
+      )}
+      {state && state.youtube && (
         <Cinema ref={ref}>
           <iframe
-            src={`https://www.youtube.com/embed/${youtube}`}
+            src={`https://www.youtube.com/embed/${state.youtube}`}
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -32,14 +50,34 @@ function PortfolioTemplate({ images, square }: Props) {
         </Cinema>
       )}
       <GridWrapper square={square}>
-        {images.map(({ url, size, alt, youtubeId }) => (
+        {images.map(({ url, size, alt, youtubeId, fullImage }) => (
           <ClickableThumbnail
             role="button"
             className={size}
-            onClick={() => setYoutube(youtubeId)}
+            onClick={() => {
+              if (youtubeId) {
+                navigate('', {
+                  state: {
+                    youtube: youtubeId,
+                  },
+                });
+              } else if (fullImage) {
+                navigate('', {
+                  state: {
+                    fullImage,
+                  },
+                });
+              } else {
+                navigate('', {
+                  state: {
+                    fullImage: url,
+                  },
+                });
+              }
+            }}
             key={alt}
           >
-            <img src={url} alt={alt} />
+            <ImageComponent src={url} alt={alt} />
           </ClickableThumbnail>
         ))}
       </GridWrapper>
