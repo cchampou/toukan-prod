@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import PortfolioTemplate from './PortfolioTemplate';
 import { Entry } from './types';
 import virtuoseRecto from '../../assets/images/illustrations/virtuoseRecto.webp';
@@ -114,7 +115,14 @@ const images: Entry[] = [
 ];
 
 function PortfolioIllustration() {
-  return <PortfolioTemplate images={images} square />;
+  return (
+    <>
+      <Helmet>
+        <title>Portfolio illustration</title>
+      </Helmet>
+      <PortfolioTemplate images={images} square />;
+    </>
+  );
 }
 
 export default PortfolioIllustration;

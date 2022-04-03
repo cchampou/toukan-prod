@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Band, Container, Intro, Title } from './styles';
 import clipThumbnail from '../../assets/images/thumbnails/clip.jpg';
 import liveThumbnail from '../../assets/images/thumbnails/live.jpg';
@@ -8,6 +9,9 @@ import CaptionedVideo from '../../molecules/captionedVideo/CaptionedVideo';
 function Clip() {
   return (
     <Container>
+      <Helmet>
+        <title>Les clips</title>
+      </Helmet>
       <Band>
         <Title>Les clips</Title>
         <Intro>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Band, Container, Intro, Title } from '../clip/styles';
 import droneThumbnail from '../../assets/images/thumbnails/drone.jpg';
 import fpvThumbnail from '../../assets/images/thumbnails/fpv.jpg';
@@ -7,8 +8,11 @@ import CaptionedVideo from '../../molecules/captionedVideo/CaptionedVideo';
 function Drone() {
   return (
     <Container>
+      <Helmet>
+        <title>Les drones</title>
+      </Helmet>
       <Band>
-        <Title>Les Drones</Title>
+        <Title>Les drones</Title>
         <Intro>
           Ayant passé ma <strong>licence professionnelle</strong> de{' '}
           <strong>télépilote de drone</strong>, je vous propose d’inclure dans

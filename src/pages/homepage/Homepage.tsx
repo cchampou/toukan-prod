@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Helmet } from 'react-helmet';
 import logoWhite from '../../assets/logo-white.webp';
 import monitor from '../../assets/images/monitor.webp';
 import Scroll from '../../atoms/scroll/Scroll';
@@ -25,6 +26,9 @@ function Homepage() {
 
   return (
     <>
+      <Helmet>
+        <title>Toukan Production</title>
+      </Helmet>
       <Debug />
       <HomepageVideo loop muted autoPlay>
         <source

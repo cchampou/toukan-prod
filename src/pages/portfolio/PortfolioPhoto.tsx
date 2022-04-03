@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import PortfolioTemplate from './PortfolioTemplate';
 import { Entry } from './types';
 import stairs from '../../assets/images/photos/stairs.webp';
@@ -110,7 +111,14 @@ const images: Entry[] = [
 ];
 
 function PortfolioPhoto() {
-  return <PortfolioTemplate images={images} />;
+  return (
+    <>
+      <Helmet>
+        <title>Portfolio photo</title>
+      </Helmet>
+      <PortfolioTemplate images={images} />
+    </>
+  );
 }
 
 export default PortfolioPhoto;

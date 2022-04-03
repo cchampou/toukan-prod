@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Input from '../../atoms/inputs/Input';
 import { ContentContainer } from '../homepage/styles';
 import { Columns, Form, Information, SendButton } from './styles';
@@ -7,6 +8,9 @@ import TextArea from '../../atoms/inputs/TextArea';
 function Contact() {
   return (
     <ContentContainer>
+      <Helmet>
+        <title>Contacter Toukan Production</title>
+      </Helmet>
       <h1>Contact</h1>
       <Columns>
         <Information>

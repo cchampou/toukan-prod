@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import r4d from '../../assets/images/thumbnails/r4d_colo.jpg';
 import confluence from '../../assets/images/thumbnails/conflu.jpg';
 import dji from '../../assets/images/thumbnails/dji_insta.jpg';
@@ -69,7 +70,14 @@ const images: Entry[] = [
 ];
 
 function PortfolioVideo() {
-  return <PortfolioTemplate images={images} />;
+  return (
+    <>
+      <Helmet>
+        <title>Portfolio video</title>
+      </Helmet>
+      <PortfolioTemplate images={images} />
+    </>
+  );
 }
 
 export default PortfolioVideo;
