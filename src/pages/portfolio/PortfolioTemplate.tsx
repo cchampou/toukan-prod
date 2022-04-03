@@ -1,7 +1,8 @@
 import React from 'react';
 import { useKeyPress } from 'react-alt';
-import { useClickOutside, useScrollLock } from '@mantine/hooks';
+import { useScrollLock } from '@mantine/hooks';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { useSwipeable } from 'react-swipeable';
 import { ContentContainer } from '../homepage/styles';
 import { Cinema, ClickableThumbnail, GridWrapper } from './styles';
 import { Entry } from './types';
@@ -26,20 +27,55 @@ function PortfolioTemplate({ images, square }: Props) {
     navigate(-1);
   }, 'Escape');
 
-  const ref = useClickOutside(() => navigate(-1));
   useScrollLock(!!state);
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => {
+      if (state.fullImage) {
+        const index = images.findIndex(
+          (image) =>
+            image.fullImage === state.fullImage || image.url === state.fullImage
+        );
+        if (index < images.length - 1) {
+          navigate('', {
+            state: {
+              fullImage: images[index + 1].url,
+            },
+            replace: true,
+          });
+        }
+      }
+    },
+    onSwipedRight: () => {
+      if (state.fullImage) {
+        const index = images.findIndex(
+          (image) =>
+            image.fullImage === state.fullImage || image.url === state.fullImage
+        );
+        if (index > 0) {
+          navigate('', {
+            state: {
+              fullImage: images[index - 1].url,
+            },
+            replace: true,
+          });
+        }
+      }
+    },
+  });
+
   return (
-    <ContentContainer>
+    // eslint-disable-next-line react/jsx-props-no-spreading
+    <ContentContainer {...handlers}>
       {/* Probably unnecessary now */}
       {/* {state && state.youtube && <Backdrop />} */}
       {state && state.fullImage && (
         <Cinema onClick={() => navigate(-1)}>
-          <ImageComponent src={state.fullImage} alt="Stairs full" />
+          <ImageComponent src={state.fullImage} alt="Fullscreen image" />
         </Cinema>
       )}
       {state && state.youtube && (
-        <Cinema ref={ref}>
+        <Cinema>
           <iframe
             src={`https://www.youtube.com/embed/${state.youtube}`}
             title="YouTube video player"

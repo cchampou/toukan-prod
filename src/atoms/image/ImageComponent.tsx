@@ -28,7 +28,7 @@ function ImageComponent({ src, alt }: Props) {
         container.current.appendChild(image);
       }
     };
-  }, []);
+  }, [src]);
 
   return (
     <Container ref={container}>
