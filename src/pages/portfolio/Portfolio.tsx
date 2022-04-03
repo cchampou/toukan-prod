@@ -7,7 +7,7 @@ function Portfolio() {
   return (
     <MainPageWrapper>
       <Helmet>
-        <title>Portfolio</title>
+        <title>Portfolio Toukan Production</title>
       </Helmet>
       <div>
         <NavLink to="/portfolio/videos">Videos</NavLink>

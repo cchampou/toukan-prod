@@ -10,7 +10,7 @@ function Clip() {
   return (
     <Container>
       <Helmet>
-        <title>Les clips</title>
+        <title>Les clips Toukan Production</title>
       </Helmet>
       <Band>
         <Title>Les clips</Title>

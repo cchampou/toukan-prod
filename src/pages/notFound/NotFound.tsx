@@ -7,7 +7,7 @@ function NotFound() {
   return (
     <ContentContainer>
       <Helmet>
-        <title>Page introuvable</title>
+        <title>Toukan introuvable</title>
       </Helmet>
       <Headline>Page introuvable</Headline>
     </ContentContainer>

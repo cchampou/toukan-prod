@@ -9,7 +9,7 @@ function Drone() {
   return (
     <Container>
       <Helmet>
-        <title>Les drones</title>
+        <title>Les drones Toukan Production</title>
       </Helmet>
       <Band>
         <Title>Les drones</Title>
