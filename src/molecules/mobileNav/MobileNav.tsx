@@ -32,6 +32,9 @@ function MobileNav() {
   return (
     <Container>
       <li>
+        <NavLink to="/">Accueil</NavLink>
+      </li>
+      <li>
         <NavLink to="/profile">Profile</NavLink>
       </li>
       <li>
