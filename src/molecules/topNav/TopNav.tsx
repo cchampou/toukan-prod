@@ -6,7 +6,8 @@ import {
   faSun,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { useScrollLock } from '@mantine/hooks';
 import logoBlack from '../../assets/logo-black.webp';
 import logoWhite from '../../assets/logo-white.webp';
 import './styles.css';
@@ -17,12 +18,20 @@ import darkContext from '../../contexts/dark';
 import DarkModeSwitch from '../../atoms/darkModeSwitch/DarkModeSwitch';
 import CallToAction from '../../atoms/callToAction/CallToAction';
 import { NavItem } from '../../atoms/navItem/styles';
+import MobileNav from '../mobileNav/MobileNav';
+
+type NavigationState = {
+  isMobileMenuVisible: boolean;
+};
 
 function TopNav() {
   const goToHomepage = useGoToHomepage();
   const navigate = useNavigate();
+  const location = useLocation();
+  const state = location.state as NavigationState;
   const { isMouseTop, isScrolled } = useTopNavVisibility();
   const { toggleDark, isDark } = useContext(darkContext);
+  useScrollLock(!!state);
 
   return (
     <Nav
@@ -54,8 +63,19 @@ function TopNav() {
           onClick={() => navigate('/contact')}
           cursor="pointer"
         />
-        <FontAwesomeIcon icon={faBars} />
+        <FontAwesomeIcon
+          icon={faBars}
+          onClick={() => {
+            if (state) {
+              navigate(-1);
+            } else {
+              navigate('/', { state: { isMobileMenuVisible: true } });
+            }
+          }}
+          cursor="pointer"
+        />
       </MobileSection>
+      {state && state.isMobileMenuVisible && <MobileNav />}
     </Nav>
   );
 }
