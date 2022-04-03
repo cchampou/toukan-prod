@@ -28,6 +28,7 @@ const images: Entry[] = [
     url: dji,
     size: 'tall',
     alt: 'DJI Insta',
+    youtubeId: 'TWJqsq8Mvrs',
   },
   {
     url: ronin,

@@ -7,6 +7,7 @@ import { ContentContainer } from '../homepage/styles';
 import { Cinema, ClickableThumbnail, GridWrapper } from './styles';
 import { Entry } from './types';
 import ImageComponent from '../../atoms/image/ImageComponent';
+import { getEntryContent } from './utils';
 
 type Props = {
   images: Entry[];
@@ -33,13 +34,12 @@ function PortfolioTemplate({ images, square }: Props) {
     onSwipedLeft: () => {
       if (state.fullImage) {
         const index = images.findIndex(
-          (image) =>
-            image.fullImage === state.fullImage || image.url === state.fullImage
+          (image) => getEntryContent(image) === state.fullImage
         );
         if (index < images.length - 1) {
           navigate('', {
             state: {
-              fullImage: images[index + 1].url,
+              fullImage: getEntryContent(images[index + 1]),
             },
             replace: true,
           });
@@ -49,13 +49,12 @@ function PortfolioTemplate({ images, square }: Props) {
     onSwipedRight: () => {
       if (state.fullImage) {
         const index = images.findIndex(
-          (image) =>
-            image.fullImage === state.fullImage || image.url === state.fullImage
+          (image) => getEntryContent(image) === state.fullImage
         );
         if (index > 0) {
           navigate('', {
             state: {
-              fullImage: images[index - 1].url,
+              fullImage: getEntryContent(images[index - 1]),
             },
             replace: true,
           });
