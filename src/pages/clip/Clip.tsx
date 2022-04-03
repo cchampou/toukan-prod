@@ -24,7 +24,7 @@ function Clip() {
         </Intro>
       </Band>
       <CaptionedVideo
-        src="https://toukan.cdn.cchampou.me/content/clip/clip-demo/manifest.mpd"
+        src="https://toukan-cdn.cchampou.me/content/clip/clip-demo/manifest.mpd"
         title="Cinématique"
         poster={clipThumbnail}
       >
@@ -34,7 +34,7 @@ function Clip() {
         histoire, une idée ou simplement une direction artistique.
       </CaptionedVideo>
       <CaptionedVideo
-        src="https://toukan.cdn.cchampou.me/content/clip/live/manifest.mpd"
+        src="https://toukan-cdn.cchampou.me/content/clip/live/manifest.mpd"
         title="Live"
         poster={liveThumbnail}
         reverse
@@ -45,7 +45,7 @@ function Clip() {
         parfaite car chaque moment loupé à l’image est irremplaçable.
       </CaptionedVideo>
       <CaptionedVideo
-        src="https://toukan.cdn.cchampou.me/content/clip/aftermovie/manifest.mpd"
+        src="https://toukan-cdn.cchampou.me/content/clip/aftermovie/manifest.mpd"
         title="Aftermovie"
         poster={afterMovieThumbnail}
       >

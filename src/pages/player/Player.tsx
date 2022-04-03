@@ -15,7 +15,7 @@ function Player() {
         <title>Video player Toukan Production</title>
       </Helmet>
       <OverrideContentContainer>
-        <Video src="https://toukan.cdn.cchampou.me/content/clip/clip-demo/manifest.mpd" />
+        <Video src="https://toukan-cdn.cchampou.me/content/clip/clip-demo/manifest.mpd" />
       </OverrideContentContainer>
     </>
   );

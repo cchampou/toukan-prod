@@ -1,9 +1,21 @@
 import styled from '@emotion/styled';
-import { css } from '@emotion/react';
+import { css, keyframes } from '@emotion/react';
 import { mobileOnly } from '../../styles/theme';
 import { ContentContainer } from '../homepage/styles';
 
-export const ClickableThumbnail = styled('button')`
+const appear = keyframes`
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+`;
+
+export const ClickableThumbnail = styled('button')<{ fadeInDuration: number }>`
+  animation: ${appear} ${({ fadeInDuration }) => fadeInDuration}s ease-in-out;
   background-color: transparent;
   padding: 0;
   border: none;

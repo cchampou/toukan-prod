@@ -1,6 +1,6 @@
 import React from 'react';
-
 import { Helmet } from 'react-helmet';
+
 import logoWhite from '../../assets/logo-white.webp';
 import monitor from '../../assets/images/monitor.webp';
 import Scroll from '../../atoms/scroll/Scroll';
@@ -32,7 +32,7 @@ function Homepage() {
       <Debug />
       <HomepageVideo loop muted autoPlay>
         <source
-          src={`https://toukan.cdn.cchampou.me/toukan.webm#t=${Math.ceil(
+          src={`https://toukan-cdn.cchampou.me/toukan.webm#t=${Math.ceil(
             232 * Math.random()
           )}`}
           type="video/webm"
@@ -74,17 +74,17 @@ function Homepage() {
         <GraySection>
           <VideoBandsContainer>
             <VideoBand
-              videoSource="https://toukan.cdn.cchampou.me/corpo.webm"
+              videoSource="https://toukan-cdn.cchampou.me/corpo.webm"
               text="Corporate"
               linkTo="/corpo"
             />
             <VideoBand
-              videoSource="https://toukan.cdn.cchampou.me/clip.webm"
+              videoSource="https://toukan-cdn.cchampou.me/clip.webm"
               text="Clip"
               linkTo="/clip"
             />
             <VideoBand
-              videoSource="https://toukan.cdn.cchampou.me/drone.webm"
+              videoSource="https://toukan-cdn.cchampou.me/drone.webm"
               text="Drone"
               linkTo="/drone"
             />

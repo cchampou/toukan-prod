@@ -16,7 +16,6 @@ function CaptionedVideo({
   poster,
   reverse = false,
 }: PropsWithChildren<Props>) {
-  console.log(poster);
   return (
     <Split reverse={reverse}>
       <SplitText reverse={reverse}>
@@ -24,7 +23,7 @@ function CaptionedVideo({
         {children}
       </SplitText>
       <VideoContainer>
-        <Video src={src} />
+        <Video src={src} poster={poster} />
       </VideoContainer>
     </Split>
   );

@@ -89,6 +89,7 @@ function PortfolioTemplate({ images, square }: Props) {
           <ClickableThumbnail
             role="button"
             className={size}
+            fadeInDuration={Math.random() + 0.5}
             onClick={() => {
               if (youtubeId) {
                 navigate('', {

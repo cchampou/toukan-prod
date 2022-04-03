@@ -8,9 +8,10 @@ import Loader from '../../atoms/loader/Loader';
 
 type Props = {
   src: string;
+  poster: string;
 };
 
-function Video({ src }: Props) {
+function Video({ src, poster }: Props) {
   const HTMLPlayerRef = useRef<HTMLVideoElement>(null);
   const uiContainerRef = useRef<HTMLDivElement>(null);
   const [buffering, setBuffering] = useState(false);
@@ -44,7 +45,7 @@ function Video({ src }: Props) {
   return (
     <UIContainer ref={uiContainerRef}>
       {buffering && <Loader />}
-      <VideoPlayer ref={HTMLPlayerRef} />
+      <VideoPlayer ref={HTMLPlayerRef} poster={poster} />
     </UIContainer>
   );
 }
