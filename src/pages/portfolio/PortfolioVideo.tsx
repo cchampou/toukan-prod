@@ -9,10 +9,17 @@ import fourAxis from '../../assets/images/thumbnails/4axis.jpg';
 import baston from '../../assets/images/thumbnails/baston.jpg';
 import ultimae from '../../assets/images/thumbnails/ultimae.webp';
 import r4dMonitor from '../../assets/images/thumbnails/r4d_monitor.jpg';
+import pls from '../../assets/images/thumbnails/pls.jpg';
 import PortfolioTemplate from './PortfolioTemplate';
 import { Entry } from './types';
 
 const images: Entry[] = [
+  {
+    url: pls,
+    alt: 'FOCUS - PLS',
+    size: 'big',
+    youtubeId: 'plZgl_DleS4',
+  },
   {
     url: r4d,
     size: 'wide',

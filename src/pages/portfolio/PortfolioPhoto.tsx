@@ -20,8 +20,29 @@ import malongo1 from '../../assets/images/photos/malongo1.webp';
 import malongo2 from '../../assets/images/photos/malongo2.webp';
 import r4dcolo1 from '../../assets/images/photos/r4dcolo1.webp';
 import r4dcolo2 from '../../assets/images/photos/r4dcolo2.webp';
+import coiffeur from '../../assets/images/photos/coiffeur.webp';
+import focus from '../../assets/images/photos/focus.webp';
+import photograph from '../../assets/images/photos/photograph.webp';
 
 const images: Entry[] = [
+  {
+    url: focus,
+    fullImage: focus,
+    alt: 'Focus',
+    size: 'tall',
+  },
+  {
+    url: photograph,
+    fullImage: photograph,
+    alt: 'Photographe',
+    size: 'wide',
+  },
+  {
+    url: coiffeur,
+    fullImage: coiffeur,
+    alt: 'coiffeur',
+    size: 'tall',
+  },
   {
     url: stairs,
     fullImage: stairsFull,
