@@ -65,8 +65,6 @@ function PortfolioTemplate({ images, square }: Props) {
 
   return (
     <ContentContainer {...handlers}>
-      {/* Probably unnecessary now */}
-      {/* {state && state.youtube && <Backdrop />} */}
       {state && state.fullImage && (
         <Cinema onClick={() => navigate(-1)}>
           <ImageComponent src={state.fullImage} alt="Fullscreen image" />
