@@ -1,7 +1,7 @@
-import React, { HTMLAttributes } from 'react';
+import React, { TextareaHTMLAttributes } from 'react';
 import { Label, StyledTextArea } from './styles';
 
-interface Props extends HTMLAttributes<HTMLTextAreaElement> {
+interface Props extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   label: string;
 }
 
