@@ -89,17 +89,6 @@ export const GridWrapper = styled('div')<GridWrapperProps>`
   }
 `;
 
-export const Backdrop = styled('div')`
-  background-color: black;
-  opacity: 0.9;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9;
-`;
-
 export const Cinema = styled('div')`
   position: fixed;
   width: 100vw;
@@ -129,19 +118,11 @@ export const Cinema = styled('div')`
 
 export const MainPageWrapper = styled(ContentContainer)`
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   display: flex;
   font-family: ${({ theme }) => theme.fonts.primary};
 
-  div {
-    display: flex;
+  ${mobileOnly} {
     flex-direction: column;
-  }
-
-  a {
-    display: flex;
-    text-align: center;
-    margin: 2.5rem;
-    font-size: 2.5rem;
   }
 `;
