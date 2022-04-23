@@ -27,7 +27,7 @@ export default async function handler(
 
   const info = await transporter.sendMail({
     from: `${request.body.name} <${request.body.email}>`,
-    to: 'clement@champouillon.com',
+    to: 'contact@toukanproduction.com',
     subject: `Contact via toukanproduction.com - ${request.body.subject}`,
     text: `
     Sujet du message : ${request.body.subject}
