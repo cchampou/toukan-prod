@@ -54,9 +54,8 @@ function Contact() {
             name="content"
             placeholder="Décrivez votre projet..."
             onChange={handleChange}
-          >
-            {state.content}
-          </TextArea>
+            value={state.content}
+          />
           <SendButton type="submit">Envoyer</SendButton>
         </Form>
       </Columns>
