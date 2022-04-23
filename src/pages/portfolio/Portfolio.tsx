@@ -3,30 +3,43 @@ import { NavLink } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import styled from '@emotion/styled';
 import { MainPageWrapper } from './styles';
-import focus from '../../assets/images/photos/focus.webp';
-import session from '../../assets/images/photos/session.webp';
-import virtuoseRecto from '../../assets/images/illustrations/virtuoseRecto.webp';
+import videos from '../../assets/images/thumbnails/pls.jpg';
+import photos from '../../assets/images/photos/profil.webp';
+import illustrations from '../../assets/images/illustrations/ultiRecto.webp';
 import { mobileOnly } from '../../styles/theme';
 
 type PanelProps = {
   image: string;
+  position: string;
+  mPosition: string;
 };
 
 const Panel = styled(NavLink)<PanelProps>`
-  background-image: url(${({ image }) => image});
+  background: url(${({ image }) => image});
+  background-position: ${({ position }) => position};
   background-size: cover;
   position: relative;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   line-height: 100%;
-  display: flex;
-  padding-top: 60vh;
-  padding-left: 20px;
+  padding-top: 4vh;
   flex: 1;
-  outline: solid 10px ${({ theme }) => theme.colors.light};
+  margin-right: 10px;
+  opacity: 0.4;
+  transition: opacity 0.3s ease-in-out;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  text-align: center;
+
+  &:hover {
+    opacity: 1;
+  }
 
   ${mobileOnly} {
     padding-top: 10vh;
     padding-left: 20px;
+    opacity: 0.7;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    background-position: ${({ mPosition }) => mPosition};
   }
 `;
 
@@ -36,13 +49,28 @@ function Portfolio() {
       <Helmet>
         <title>Portfolio Toukan Production</title>
       </Helmet>
-      <Panel to="/portfolio/videos" image={focus}>
+      <Panel
+        to="/portfolio/videos"
+        image={videos}
+        position="center"
+        mPosition="center"
+      >
         Videos
       </Panel>
-      <Panel to="/portfolio/photos" image={session}>
+      <Panel
+        to="/portfolio/photos"
+        image={photos}
+        position="center"
+        mPosition="50% 20%"
+      >
         Photos
       </Panel>
-      <Panel to="/portfolio/creations" image={virtuoseRecto}>
+      <Panel
+        to="/portfolio/creations"
+        image={illustrations}
+        position="left"
+        mPosition="left"
+      >
         Illustrations
       </Panel>
     </MainPageWrapper>
