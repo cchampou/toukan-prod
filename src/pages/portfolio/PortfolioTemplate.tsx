@@ -64,7 +64,6 @@ function PortfolioTemplate({ images, square }: Props) {
   });
 
   return (
-    // eslint-disable-next-line react/jsx-props-no-spreading
     <ContentContainer {...handlers}>
       {/* Probably unnecessary now */}
       {/* {state && state.youtube && <Backdrop />} */}
