@@ -24,13 +24,14 @@ const Panel = styled(NavLink)<PanelProps>`
   padding-top: 4vh;
   flex: 1;
   margin-right: 10px;
-  opacity: 0.4;
-  transition: opacity 0.3s ease-in-out;
+  filter: brightness(0.6);
+  transition: filter 0.3s ease-in-out;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   text-align: center;
+  color: white;
 
   &:hover {
-    opacity: 1;
+    filter: brightness(1);
   }
 
   ${mobileOnly} {
