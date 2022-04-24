@@ -6,6 +6,8 @@ import monitor from '../../assets/images/monitor.webp';
 import Scroll from '../../atoms/scroll/Scroll';
 import useTopNavVisibility from '../../hooks/useTopNavVisibility';
 import corpoThumbnail from '../../assets/images/homepage/corpo-thumbnail.jpg';
+import clipThumbnail from '../../assets/images/homepage/clip.jpg';
+import droneThumbnail from '../../assets/images/homepage/drone.jpg';
 import {
   ContentContainer,
   GraySection,
@@ -90,6 +92,7 @@ function Homepage() {
               ]}
               text="Clip"
               linkTo="/clip"
+              poster={clipThumbnail}
             />
             <VideoBand
               videoSources={[
@@ -98,6 +101,7 @@ function Homepage() {
               ]}
               text="Drone"
               linkTo="/drone"
+              poster={droneThumbnail}
             />
           </VideoBandsContainer>
         </GraySection>
