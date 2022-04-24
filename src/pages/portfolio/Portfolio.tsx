@@ -35,6 +35,7 @@ const Panel = styled(NavLink)<PanelProps>`
   }
 
   ${mobileOnly} {
+    filter: brightness(1);
     padding-top: 10vh;
     padding-left: 20px;
     margin-bottom: 10px;
