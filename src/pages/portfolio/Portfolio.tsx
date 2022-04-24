@@ -37,7 +37,6 @@ const Panel = styled(NavLink)<PanelProps>`
   ${mobileOnly} {
     padding-top: 10vh;
     padding-left: 20px;
-    opacity: 0.7;
     margin-bottom: 10px;
     font-size: 1.5rem;
     background-position: ${({ mPosition }) => mPosition};
