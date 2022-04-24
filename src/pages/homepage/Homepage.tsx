@@ -74,17 +74,26 @@ function Homepage() {
         <GraySection>
           <VideoBandsContainer>
             <VideoBand
-              videoSource="https://toukan-cdn.cchampou.me/corpo.webm"
+              videoSources={[
+                ['https://toukan-cdn.cchampou.me/corpo.webm', 'video/webm'],
+                ['https://toukan-cdn.cchampou.me/corpo.mp4', 'video/mp4'],
+              ]}
               text="Corporate"
               linkTo="/corpo"
             />
             <VideoBand
-              videoSource="https://toukan-cdn.cchampou.me/clip.webm"
+              videoSources={[
+                ['https://toukan-cdn.cchampou.me/clip.webm', 'video/webm'],
+                ['https://toukan-cdn.cchampou.me/clip.mp4', 'video/mp4'],
+              ]}
               text="Clip"
               linkTo="/clip"
             />
             <VideoBand
-              videoSource="https://toukan-cdn.cchampou.me/drone.webm"
+              videoSources={[
+                ['https://toukan-cdn.cchampou.me/drone.webm', 'video/webm'],
+                ['https://toukan-cdn.cchampou.me/drone.mp4', 'video/mp4'],
+              ]}
               text="Drone"
               linkTo="/drone"
             />

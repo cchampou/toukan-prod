@@ -6,12 +6,12 @@ import useHoverPlay from '../../hooks/useHoverPlay';
 import './styles.css';
 
 type Props = {
-  videoSource: string;
+  videoSources: [string, string][];
   text: string;
   linkTo: string;
 };
 
-function VideoBand({ videoSource, text, linkTo }: Props) {
+function VideoBand({ videoSources, text, linkTo }: Props) {
   const { playerRef, domElement } = useHoverPlay();
   const navigate = useNavigate();
 
@@ -23,7 +23,9 @@ function VideoBand({ videoSource, text, linkTo }: Props) {
     >
       <Text>{text}</Text>
       <video ref={playerRef} className="video-band" loop muted>
-        <source src={videoSource} />
+        {videoSources.map(([source, type]) => (
+          <source key={source} src={source} type={type} />
+        ))}
       </video>
     </VideoBandContainer>
   );
