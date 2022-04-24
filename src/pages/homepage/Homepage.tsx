@@ -5,6 +5,7 @@ import logoWhite from '../../assets/logo-white.webp';
 import monitor from '../../assets/images/monitor.webp';
 import Scroll from '../../atoms/scroll/Scroll';
 import useTopNavVisibility from '../../hooks/useTopNavVisibility';
+import corpoThumbnail from '../../assets/images/homepage/corpo-thumbnail.jpg';
 import {
   ContentContainer,
   GraySection,
@@ -80,6 +81,7 @@ function Homepage() {
               ]}
               text="Corporate"
               linkTo="/corpo"
+              poster={corpoThumbnail}
             />
             <VideoBand
               videoSources={[

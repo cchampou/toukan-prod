@@ -9,9 +9,10 @@ type Props = {
   videoSources: [string, string][];
   text: string;
   linkTo: string;
+  poster: string;
 };
 
-function VideoBand({ videoSources, text, linkTo }: Props) {
+function VideoBand({ videoSources, text, linkTo, poster }: Props) {
   const { playerRef, domElement } = useHoverPlay();
   const navigate = useNavigate();
 
@@ -22,7 +23,7 @@ function VideoBand({ videoSources, text, linkTo }: Props) {
       onClick={() => navigate(linkTo)}
     >
       <Text>{text}</Text>
-      <video ref={playerRef} className="video-band" loop muted>
+      <video ref={playerRef} className="video-band" poster={poster} loop muted>
         {videoSources.map(([source, type]) => (
           <source key={source} src={source} type={type} />
         ))}
