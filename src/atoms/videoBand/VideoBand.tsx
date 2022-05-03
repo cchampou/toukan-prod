@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { Text, VideoBandContainer } from './styles';
+import { Text, Video, VideoBandContainer } from './styles';
 import useHoverPlay from '../../hooks/useHoverPlay';
 import './styles.css';
 
@@ -23,11 +23,11 @@ function VideoBand({ videoSources, text, linkTo, poster }: Props) {
       onClick={() => navigate(linkTo)}
     >
       <Text>{text}</Text>
-      <video ref={playerRef} className="video-band" poster={poster} loop muted>
+      <Video ref={playerRef} className="video-band" poster={poster} loop muted>
         {videoSources.map(([source, type]) => (
           <source key={source} src={source} type={type} />
         ))}
-      </video>
+      </Video>
     </VideoBandContainer>
   );
 }
