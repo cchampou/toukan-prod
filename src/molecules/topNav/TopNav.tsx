@@ -48,10 +48,10 @@ function TopNav() {
         />
       </Logo>
       <RightSection>
-        <NavItem to="/profile">Profil</NavItem>
+        {/* <NavItem to="/profile">Profil</NavItem> */}
         <NavItem to="/portfolio">Portfolio</NavItem>
         <NavItem to="/rental">Location</NavItem>
-        <NavItem to="/news">Actualité</NavItem>
+        {/* <NavItem to="/news">Actualité</NavItem> */}
         <DarkModeSwitch onClick={toggleDark}>
           <FontAwesomeIcon icon={isDark ? faSun : faMoon} />
         </DarkModeSwitch>
