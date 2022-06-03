@@ -12,6 +12,7 @@ import PortfolioPhoto from './pages/portfolio/PortfolioPhoto';
 import PortfolioIllustration from './pages/portfolio/PortfolioIllustration';
 import Contact from './pages/contact/Contact';
 import Player from './pages/player/Player';
+import Rental from './pages/rental/Rental';
 
 const ScrollManager = ({ children }: PropsWithChildren<any>) => {
   const { pathname } = useLocation();
@@ -42,6 +43,7 @@ function Router() {
           />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/player" element={<Player />} />
+          <Route path="/rental" element={<Rental />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </ScrollManager>
