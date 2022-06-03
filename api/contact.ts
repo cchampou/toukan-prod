@@ -38,6 +38,5 @@ export default async function handler(
     Téléphone : ${request.body.phone}`,
   });
 
-  console.log('Message sent: %s', info.messageId);
   response.status(200).send(request.body);
 }
