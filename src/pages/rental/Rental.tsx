@@ -5,6 +5,7 @@ import BM4K from '../../assets/images/rental/BMPCC4K.png';
 import BM6K from '../../assets/images/rental/BMPCC6KPRO.png';
 import Fuji from '../../assets/images/rental/Fuji X-T30 II.png';
 import { ContentContainer } from '../homepage/styles';
+import RentalItem from '../../molecules/rentalItem/RentalItem';
 
 function Rental() {
   return (
@@ -22,15 +23,17 @@ function Rental() {
         </p>
       </Columns>
       <Columns>
-        <div>
-          <img src={BM4K} alt="BlackMagic4k" width="80%" />
-        </div>
-        <div>
-          <img src={BM6K} alt="BlackMagic 6K Pro" width="80%" />
-        </div>
-        <div>
-          <img src={Fuji} alt="Fuji X-T30" width="80%" />
-        </div>
+        <RentalItem
+          image={BM4K}
+          name="BlackMagic Pocket Cinema Camera 4K"
+          price={40}
+        />
+        <RentalItem
+          image={BM6K}
+          name="BlackMagic Pocket Cinema Camera 6K Pro"
+          price={75}
+        />
+        <RentalItem image={Fuji} name="Fuji X-T30" price={20} />
       </Columns>
     </ContentContainer>
   );
