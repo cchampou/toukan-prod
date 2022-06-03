@@ -4,4 +4,5 @@ export const RentalItemContainer = styled('div')`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin: 3rem 0;
 `;

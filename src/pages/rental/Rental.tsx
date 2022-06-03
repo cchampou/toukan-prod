@@ -4,6 +4,8 @@ import { Columns } from '../contact/styles';
 import BM4K from '../../assets/images/rental/BMPCC4K.png';
 import BM6K from '../../assets/images/rental/BMPCC6KPRO.png';
 import Fuji from '../../assets/images/rental/Fuji X-T30 II.png';
+import Mavic3 from '../../assets/images/rental/Mavic 3.png';
+import RoninS2 from '../../assets/images/rental/Ronin S2.png';
 import { ContentContainer } from '../homepage/styles';
 import RentalItem from '../../molecules/rentalItem/RentalItem';
 
@@ -34,6 +36,10 @@ function Rental() {
           price={75}
         />
         <RentalItem image={Fuji} name="Fuji X-T30" price={20} />
+      </Columns>
+      <Columns>
+        <RentalItem image={Mavic3} name="Mavic 3" price={50} />
+        <RentalItem image={RoninS2} name="Ronin S2" price={25} />
       </Columns>
     </ContentContainer>
   );
