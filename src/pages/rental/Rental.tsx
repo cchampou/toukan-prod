@@ -23,13 +23,13 @@ function Rental() {
       </Columns>
       <Columns>
         <div>
-          <img src={BM4K} width="80%" />
+          <img src={BM4K} alt="BlackMagic4k" width="80%" />
         </div>
         <div>
-          <img src={BM6K} width="80%" />
+          <img src={BM6K} alt="BlackMagic 6K Pro" width="80%" />
         </div>
         <div>
-          <img src={Fuji} width="80%" />
+          <img src={Fuji} alt="Fuji X-T30" width="80%" />
         </div>
       </Columns>
     </ContentContainer>
