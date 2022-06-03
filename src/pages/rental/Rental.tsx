@@ -17,7 +17,7 @@ function Rental() {
         <p>
           Vous trouverez ici les produits que nous mettons à votre disposition
           et leurs tarifs. Si la location d&apos;un ou plusieurs vous interesse,
-          contactez-moi en indiquant les références et la date à laquelle vous
+          contactez-nous en indiquant les références et la date à laquelle vous
           souhaitez les louer.
         </p>
       </Columns>
