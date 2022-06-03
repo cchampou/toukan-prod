@@ -1,5 +1,5 @@
 import React from 'react';
-import { RentalItemContainer } from './styles';
+import { RentalImageContainer, RentalItemContainer } from './styles';
 
 type Props = {
   image: string;
@@ -10,9 +10,19 @@ type Props = {
 function RentalItem({ image, name, price }: Props) {
   return (
     <RentalItemContainer>
-      <img src={image} alt={name} width="80%" />
+      <RentalImageContainer>
+        <img src={image} alt={name} />
+      </RentalImageContainer>
       <h4>{name}</h4>
-      <h2 style={{ textAlign: 'left', margin: 0 }}>{price}€/J</h2>
+      <h2
+        style={{
+          textAlign: 'left',
+          margin: 0,
+          marginTop: 'auto',
+        }}
+      >
+        {price}€/J
+      </h2>
     </RentalItemContainer>
   );
 }
