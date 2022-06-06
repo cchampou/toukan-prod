@@ -1,6 +1,10 @@
 import styled from '@emotion/styled';
-import { Columns } from '../contact/styles';
 
-export const RentalColumns = styled(Columns)`
+export const RentalColumns = styled('div')`
   justify-content: center;
+  flex-direction: row;
+  display: flex;
+  padding: 0 2rem;
+
+  flex-wrap: wrap;
 `;
